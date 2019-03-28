@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ekaterina Zhuikova](https://up.htmlacademy.ru/adaptive/16/user/1018265).
-* Наставник: `Неизвестно`.
+* Наставник: [Valeriy Melnikov](https://htmlacademy.ru/profile/id1043615)
 
 ---
 

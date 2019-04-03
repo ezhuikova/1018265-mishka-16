@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Магазин «Мишка»</title>
+</head>
+<body>
+<header class="page-header">
+
+  <a class="page-header__logo"
+     href="/">
+    <img class="page-header__logo-image"
+         src="http://placehold.it/86x35"
+         width="86"
+         height="35"
+         alt="Магазин «Мишка»">
+  </a>
+
+  <nav class="main-nav">
+    <button class="main-nav__toggle"
+            type="button">Открыть меню
+    </button>
+    <ul class="main-nav__list site-list">
+
+      <li class="site-list__item">
+        <a class="site-list__item--catalog" href="catalog.html">Каталог товаров</a>
+      </li>
+
+      <li class="site-list__item">
+        <a class="site-list__item--order" href="form.html">Вязание на заказ</a>
+      </li>
+
+      <li class="site-list__item">
+        <a class="site-list__item--search"
+           href="#">Поиск по сайту
+          <svg class="site-list__icon-search"
+               width="18"
+               height="18">
+          </svg>
+        </a>
+      </li>
+
+      <li class="site-list__item">
+        <a class="site-list__item--order" href="shopping-card.html">Корзиа</a>
+      </li>
+
+    </ul>
+  </nav>
+
+</header>
+
+<main class="page-main">
+  <h1 class="visually-hidden">Страница товаров</h1>
+
+  <section class="page-main__title-wrapper">
+    <h2 class="page-main__title">Каталог товаров</h2>
+  </section>
+
+  <section class="catalog">
+    <ul class="catalog__list">
+      <li class="catalog__item">
+        <img class="catalog__image"
+             src="http://placehold.it/250x250"
+             width="250"
+             height="250">
+        <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+        <p class="catalog__description">Рост 30 см, вес 200г</p>
+        <br/>
+        <div class="catalog__buy-wrapper">
+          <b class="catalog__price">1200 руб.</b>
+          <a class="catalog__buy-action button"
+             href="shopping-card.html">Добавить в корзину
+            <svg class="catalog__icon-buy"
+                 width="18"
+                 height="18">
+            </svg>
+          </a>
+        </div>
+      </li>
+
+      <li class="catalog__item">
+        <img class="catalog__image"
+             src="http://placehold.it/250x250"
+             width="250"
+             height="250">
+        <h3 class="catalog__title">Корзинка для белья</h3>
+        <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+        <br/>
+        <div class="catalog__buy-wrapper">
+          <b class="catalog__price">690 руб.</b>
+          <a class="catalog__buy-action button"
+             href="shopping-card.html">Добавить в корзину
+            <svg class="catalog__icon-buy"
+                 width="18"
+                 height="18">
+            </svg>
+          </a>
+        </div>
+      </li>
+
+      <li class="catalog__item">
+        <img class="catalog__image"
+             src="http://placehold.it/250x250"
+             width="250"
+             height="250">
+        <h3 class="catalog__title">Большая корзинка для игрушек</h3>
+        <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+        <br/>
+        <div class="catalog__buy-wrapper">
+          <b class="catalog__price">1500 руб.</b>
+          <a class="catalog__buy-action button"
+             href="shopping-card.html">Добавить в корзину
+            <svg class="catalog__icon-buy"
+                 width="18"
+                 height="18">
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+</main>
+
+<footer class="page-footer">
+
+  <div class="page-footer__social social">
+    <ul class=" social__list">
+      <li class="social__item">
+        <a class="social__link social__link--instagram"
+           href="https://www.instagram.com/htmlacademy">Мы в Instagram</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook"
+           href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter"
+           href="https://www.twittero.com/htmlacademy">Мы в Twitter</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="page-footer__copyright copyright">
+    <b class="copyright__text">Разработано</b>
+    <svg class="copyright__text__svg--academy svg"></svg>
+  </div>
+
+</footer>
+</body>
+</html>

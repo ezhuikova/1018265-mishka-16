@@ -1,12 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Магазин «Мишка»</title>
+</head>
+<body>
+<header class="page-header">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <a class="page-header__logo"
+     href="/">
+    <img class="page-header__logo-image"
+         src="http://placehold.it/86x35"
+         width="86"
+         height="35"
+         alt="Магазин «Мишка»">
+  </a>
 
-  </body>
+  <nav class="main-nav">
+    <button class="main-nav__toggle"
+            type="button">Открыть меню
+    </button>
+    <ul class="main-nav__list site-list">
+
+      <li class="site-list__item">
+        <a class="site-list__link"
+           href="catalog.html">Каталог товаров</a>
+      </li>
+
+      <li class="site-list__item">
+        <a class="site-list__link"
+           href="form.html">Вязание на заказ</a>
+      </li>
+
+      <li class="site-list__item">
+        <a class="site-list__link  site-list__link--search"
+           href="#">Поиск по сайту
+          <svg class="site-list__icon-search"
+               width="18"
+               height="18">
+          </svg>
+        </a>
+      </li>
+
+      <li class="site-list__item">
+        <a class="site-list__link site-list__link--order"
+           href="shopping-card.html">Корзина</a>
+      </li>
+
+    </ul>
+  </nav>
+
+</header>
+<main class="page-main">
+  <h1 class="visually-hidden">Главная страница магазина</h1>
+
+  <section class="categories">
+    <header class="categories__header">
+      <h2 class="categories__title">Милые штучки ручной работы для дома</h2>
+    </header>
+
+    <ul class="categories__list">
+      <li class="categories__item categories__item--interior">
+        <p class="categories__name">Предметы интерьера</p>
+      </li>
+      <li class="categories__item categories__item--toys">
+        <p class="categories__name">Детские игрушки</p>
+      </li>
+    </ul>
+
+  </section>
+
+  <section class="weekly-good">
+    <header class="weekly-good__header">
+      <h2 class="weekly-good__title">Вязаные корзинки</h2>
+      <b class="weekly-good__subtitle">Товар недели</b>
+    </header>
+
+    <p class="weekly-good__description">
+      Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+    </p>
+
+    <table class="weekly-good__info">
+      <tr class="weekly-good__row">
+        <td>Цвет:</td>
+        <td>"Тиффани"/серый</td>
+      </tr>
+      <tr class="weekly-good__row">
+        <td>Диаметр:</td>
+        <td>25 см</td>
+      </tr>
+      <tr class="weekly-good__row">
+        <td>Высота:</td>
+        <td>15см</td>
+      </tr>
+    </table>
+
+    <img class="weekly-good__image" src="http://placehold.it/250x250">
+    <b class="weekly-good__price">Цена: 990руб</b>
+    <a href="cart.html" class="weekly-good__order button" type="button">Заказать</a>
+
+  </section>
+
+  <section class="about_company">
+    <header class="about_company__header">
+      <h2 class="about_company__title">Коротко о нас:</h2>
+    </header>
+
+    <ul class="about_company__list">
+      <li class="about_company__item">
+        <svg class="about-company__svg--ecology svg"></svg>
+        <p class="about_company__description">Экологически чистые материалы</p>
+      </li>
+      <li class="about_company__item">
+        <svg class="about-company__svg--price svg"></svg>
+        <p class="about_company__description">Скандинавский стиль по российской цене</p>
+      </li>
+      <li class="about_company__item">
+        <svg class="about-company__svg--like svg"></svg>
+        <p class="about_company__description">Увеличивает лайки на фотографиях</p>
+      </li>
+      <li class="about_company__item">
+        <svg class="about-company__svg--hand-made svg"></svg>
+        <p class="about_company__description">Связано вручную с любовью и умилением</p>
+      </li>
+      <li class="about_company__item">
+        <svg class="about-company__svg--rocket svg"></svg>
+        <p class="about_company__description">Поддержка отечественного производителя</p>
+      </li>
+      <li class="about_company__item">
+        <svg class="about-company__svg--gift svg"></svg>
+        <p class="about_company__description">Поставляется в подарочной упаковке</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+
+  <div class="page-footer__social social">
+    <ul class=" social__list">
+      <li class="social__item">
+        <a class="social__link social__link--instagram"
+           href="https://www.instagram.com/htmlacademy">Мы в Instagram</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook"
+           href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter"
+           href="https://www.twittero.com/htmlacademy">Мы в Twitter</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="page-footer__copyright copyright">
+    <b class="copyright__text">Разработано</b>
+    <svg class="copyright__text__svg--academy svg"></svg>
+  </div>
+
+</footer>
+</body>
 </html>

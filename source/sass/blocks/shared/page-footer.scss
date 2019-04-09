@@ -11,10 +11,47 @@
   justify-content: center;
   padding: 26px 0 20px;
   text-align: center;
-  border-bottom: 1px solid #ffffff;
+}
+
+.social__link {
+  cursor: pointer;
 }
 
 .social__link-svg {
   font-size: 22px;
   padding: 0 10px;
+
+  &:hover,
+  &:focus {
+    color: $blue-green;
+  }
 }
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding: 26px 0 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 0.95;
+  margin-right: 30px;
+}
+
+.copyright__text-svg {
+  font-size: 34px;
+
+  &--academy {
+    color: $seafoam-blue;
+  }
+}
+.page-footer__divider {
+  margin: 0 30px;
+  height: 1px;
+  background-color: white;
+}
+

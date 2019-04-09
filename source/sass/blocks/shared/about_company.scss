@@ -1,0 +1,28 @@
+.about_company {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.about_company__title {
+  @include title();
+}
+
+.about_company__list {
+  @include no-list();
+}
+
+.about_company__item {
+  padding: 15px 0;
+}
+
+.about_company__description {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.about-company__svg {
+  font-size: 37px;
+  color: $seafoam-blue;
+  margin-bottom: $about-icon-margin-bottom;
+}

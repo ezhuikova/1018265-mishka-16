@@ -1,0 +1,20 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.social__list {
+  @include no-list();
+  display: flex;
+  justify-content: center;
+  padding: 26px 0 20px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+.social__link-svg {
+  font-size: 22px;
+  padding: 0 10px;
+}

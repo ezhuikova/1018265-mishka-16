@@ -1,0 +1,22 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  min-height: 79px;
+  background-color: white;
+}
+
+.page-header__logo {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.page-header__logo-image {
+  margin: 0 auto;
+  width: 86px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.main-nav {
+  margin: auto;
+}

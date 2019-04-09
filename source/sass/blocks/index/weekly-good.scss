@@ -1,0 +1,53 @@
+.weekly-good {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 45px;
+  padding-top: 26px;
+}
+
+.weekly-good__title {
+  @include title();
+}
+
+.weekly-good__subtitle {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.8;
+  margin: 0;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+}
+
+.weekly-good__description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: $gray-color;
+}
+
+.weekly-good__info {
+  border-collapse: collapse;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.weekly-good__row {
+  border-bottom: 1px solid lightgray;
+  color: $gray-color;
+}
+
+.weekly-good__image {
+  width: auto;
+  height: 315px;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+
+.weekly-good__price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: center;
+  margin-bottom: 28px;
+  color: $gray-color;
+}

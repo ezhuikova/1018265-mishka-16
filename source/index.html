@@ -8,7 +8,7 @@
 <body>
 <header class="page-header">
   <a class="page-header__logo" href="/">
-    <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
+    <img class="page-header__logo-image" src="../../img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
   </a>
 
   <nav class="main-nav">
@@ -50,15 +50,21 @@
     <ul class="categories__list">
       <li class="categories__item categories__item--interior">
         <p class="categories__name">Предметы интерьера</p>
+        <svg class="categories__svg categories__svg--interior icon">
+          <use href="symbol-defs.svg#icon-icon-interior"></use>
+        </svg>
       </li>
       <li class="categories__item categories__item--toys">
         <p class="categories__name">Детские игрушки</p>
+        <svg class="categories__svg categories__svg--toys icon">
+          <use href="symbol-defs.svg#icon-icon-toy"></use>
+        </svg>
       </li>
     </ul>
 
   </section>
 
-  <section class="weekly-good">
+  <section class="weekly-good container">
     <header class="weekly-good__header">
       <h2 class="weekly-good__title">Вязаные корзинки</h2>
       <b class="weekly-good__subtitle">Товар недели</b>
@@ -83,41 +89,54 @@
       </tr>
     </table>
 
-    <img class="weekly-good__image" src="http://placehold.it/250x250" width="86" height="35" alt="Магазин «Мишка»">
+    <img class="weekly-good__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+
     <b class="weekly-good__price">Цена: 990руб</b>
     <a href="cart.html" class="weekly-good__order button" type="button">Заказать</a>
 
   </section>
 
-  <section class="about_company">
+  <section class="about_company container">
     <header class="about_company__header">
       <h2 class="about_company__title">Коротко о нас:</h2>
     </header>
 
     <ul class="about_company__list">
       <li class="about_company__item">
-        <svg class="about-company__svg--ecology svg"></svg>
-        <p class="about_company__description">Экологически чистые материалы</p>
+        <svg class="about-company__svg about-company__svg--flower icon">
+          <use href="symbol-defs.svg#icon-icon-feature-flower"></use>
+        </svg>
+        <div class="about_company__description">Экологически чистые материалы</div>
       </li>
       <li class="about_company__item">
-        <svg class="about-company__svg--price svg"></svg>
-        <p class="about_company__description">Скандинавский стиль по российской цене</p>
+        <svg class="about-company__svg about-company__svg--money icon">
+          <use href="symbol-defs.svg#icon-icon-feature-money"></use>
+        </svg>
+        <div class="about_company__description">Скандинавский стиль по российской цене</div>
       </li>
       <li class="about_company__item">
-        <svg class="about-company__svg--like svg"></svg>
-        <p class="about_company__description">Увеличивает лайки на фотографиях</p>
+        <svg class="about-company__svg about-company__svg--heart icon">
+          <use href="symbol-defs.svg#icon-icon-feature-heart"></use>
+        </svg>
+        <div class="about_company__description">Увеличивает лайки на фотографиях</div>
       </li>
       <li class="about_company__item">
-        <svg class="about-company__svg--hand-made svg"></svg>
-        <p class="about_company__description">Связано вручную с любовью и умилением</p>
+        <svg class="about-company__svg about-company__svg--ball icon">
+          <use href="symbol-defs.svg#icon-icon-feature-ball"></use>
+        </svg>
+        <div class="about-company__svgabout_company__description">Связано вручную с любовью и умилением</div>
       </li>
       <li class="about_company__item">
-        <svg class="about-company__svg--rocket svg"></svg>
-        <p class="about_company__description">Поддержка отечественного производителя</p>
+        <svg class="about-company__svg about-company__svg--rocket icon">
+          <use href="symbol-defs.svg#icon-icon-feature-rocket"></use>
+        </svg>
+        <div class="about_company__description">Поддержка отечественного производителя</div>
       </li>
       <li class="about_company__item">
-        <svg class="about-company__svg--gift svg"></svg>
-        <p class="about_company__description">Поставляется в подарочной упаковке</p>
+        <svg class="about-company__svg about-company__svg--gift icon">
+          <use href="symbol-defs.svg#icon-icon-feature-gift"></use>
+        </svg>
+        <div class="about_company__description">Поставляется в подарочной упаковке</div>
       </li>
     </ul>
   </section>
@@ -129,13 +148,25 @@
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Instagram</a>
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+          <svg class="social__link-svg social__link-svg--instagram icon">
+            <use href="symbol-defs.svg#icon-icon-insta"></use>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+          <svg class="social__link-svg social__link-svg--facebook icon">
+            <use href="symbol-defs.svg#icon-icon-insta"></use>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://www.twittero.com/htmlacademy">Мы в Twitter</a>
+        <a class="social__link social__link--twitter" href="https://www.twittero.com/htmlacademy">
+          <svg class="social__link-svg social__link-svg--twitter icon">
+            <use href="symbol-defs.svg#icon-icon-twitter"></use>
+          </svg>
+        </a>
       </li>
     </ul>
   </div>

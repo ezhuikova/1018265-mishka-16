@@ -1,0 +1,53 @@
+@import "../../variables";
+@import "../../mixins";
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories__header {
+  display: flex;
+  justify-content: center;
+  margin-top: -17px;
+  height: 373px;
+  background: url("../../../img/hero-mobile@1x.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.categories__title {
+  text-align: center;
+  align-self: center;
+}
+
+.categories__list {
+  @include no-list();
+}
+
+.categories__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 103px;
+  padding: 0 30px;
+  background-color: $seafoam-blue;
+
+  &:nth-child(2n) {
+    background-color: darken($seafoam-blue, 5%);
+  }
+}
+
+.categories__name {
+  flex: 1 1 auto;
+  margin-right: 30px;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+}
+
+.categories__svg {
+  color: $blue-green;
+  opacity: 0.5;
+  font-size: 62px;
+}

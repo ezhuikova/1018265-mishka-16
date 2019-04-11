@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "mixins.scss";
+@import "fonts";
 @import "scaffolding.scss";
 @import "blocks/shared/page-footer.scss";
 @import "blocks/shared/page-header.scss";
@@ -10,6 +11,7 @@
 @import "blocks/shared/about_company.scss";
 @import "blocks/shared/copyright.scss";
 @import "blocks/shared/container.scss";
+@import "blocks/shared/visually-hidden.scss";
 @import "blocks/index/categories.scss";
 @import "blocks/index/weekly-good.scss";
 @import "blocks/index/site-list.scss";

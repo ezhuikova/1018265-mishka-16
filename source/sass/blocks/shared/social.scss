@@ -1,0 +1,29 @@
+
+.social__list {
+  @include no-list();
+  display: flex;
+  padding: 0 25%;
+  height: $footer-row-height;
+  justify-content: space-between;
+  width: 50%;
+  max-width: 150px;
+  text-align: center;
+}
+
+.social__link {
+  cursor: pointer;
+}
+
+.social__item {
+  align-self: center;
+}
+
+.social__link-svg {
+  font-size: 22px;
+  padding: 0 10px;
+
+  &:hover,
+  &:focus {
+    color: $blue-green;
+  }
+}

@@ -4,6 +4,22 @@
   flex-direction: column;
   padding-bottom: 45px;
   padding-top: 26px;
+  margin-bottom: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: url("../../../img/bg-zigzag-line.svg") repeat-x;
+    background-size: contain;
+  }
+}
+
+.weekly-good__header {
+  margin-bottom: 10px;
 }
 
 .weekly-good__title {
@@ -13,7 +29,7 @@
 .weekly-good__subtitle {
   font-size: 17px;
   font-weight: bold;
-  line-height: 1.8;
+  line-height: 20px;
   margin: 0;
   color: $seafoam-blue;
   text-transform: uppercase;
@@ -21,8 +37,9 @@
 
 .weekly-good__description {
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 24px;
   color: $gray-color;
+  margin-bottom: 17px;
 }
 
 .weekly-good__info {
@@ -34,20 +51,25 @@
 .weekly-good__row {
   border-bottom: 1px solid lightgray;
   color: $gray-color;
+  height: 39px;
+}
+
+.weekly-good__name {
+  padding-right: 12px;
 }
 
 .weekly-good__image {
-  width: auto;
-  height: 315px;
+  width: 100%;
+  height: auto;
   object-fit: contain;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .weekly-good__price {
   font-size: 17px;
   font-weight: bold;
-  line-height: 1.41;
+  line-height: 24px;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   color: $gray-color;
 }

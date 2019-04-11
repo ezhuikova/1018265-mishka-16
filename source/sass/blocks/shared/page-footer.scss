@@ -5,32 +5,10 @@
   background-color: #f1f1f1;
 }
 
-.social__list {
-  @include no-list();
-  display: flex;
-  justify-content: center;
-  padding: 26px 0 20px;
-  text-align: center;
-}
-
-.social__link {
-  cursor: pointer;
-}
-
-.social__link-svg {
-  font-size: 22px;
-  padding: 0 10px;
-
-  &:hover,
-  &:focus {
-    color: $blue-green;
-  }
-}
-
 .page-footer__copyright {
   display: flex;
   justify-content: center;
-  padding: 26px 0 20px;
+  height: $footer-row-height;
   text-align: center;
   align-items: center;
 }
@@ -38,7 +16,7 @@
 .copyright__text {
   font-size: 19px;
   font-weight: bold;
-  line-height: 0.95;
+  line-height: 18px;
   margin-right: 30px;
 }
 
@@ -49,6 +27,7 @@
     color: $seafoam-blue;
   }
 }
+
 .page-footer__divider {
   margin: 0 30px;
   height: 1px;

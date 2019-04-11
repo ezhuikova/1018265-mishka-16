@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.about_company__header {
+  margin-bottom: 30px;
+}
+
 .about_company__title {
   @include title();
 }
@@ -13,16 +17,17 @@
 }
 
 .about_company__item {
-  padding: 15px 0;
+  padding-bottom: 30px;
 }
 
 .about_company__description {
   font-size: 17px;
   font-weight: bold;
+  line-height: 20px;
 }
 
 .about-company__svg {
   font-size: 37px;
   color: $seafoam-blue;
-  margin-bottom: $about-icon-margin-bottom;
+  margin-bottom: 12px;
 }

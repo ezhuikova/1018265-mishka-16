@@ -3,19 +3,21 @@
   @include no-list();
   display: flex;
   padding: 0 25%;
+  margin: 0 auto;
   height: $footer-row-height;
   justify-content: space-between;
   width: 50%;
   max-width: 150px;
   text-align: center;
+  align-items: center;
 }
 
 .social__link {
   cursor: pointer;
+  color: unset;
 }
 
 .social__item {
-  align-self: center;
 }
 
 .social__link-svg {

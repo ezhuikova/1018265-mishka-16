@@ -6,10 +6,11 @@
   margin: 0 auto;
   height: $footer-row-height;
   justify-content: space-between;
+  align-items: center;
   width: 50%;
   max-width: 150px;
+
   text-align: center;
-  align-items: center;
 }
 
 .social__link {

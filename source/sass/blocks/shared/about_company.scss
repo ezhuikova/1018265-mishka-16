@@ -1,6 +1,7 @@
 .about_company {
   display: flex;
   flex-direction: column;
+
   position: relative;
 }
 
@@ -36,8 +37,9 @@
 }
 
 .about-company__svg {
-  color: $seafoam-blue;
   width: 55px;
+
+  color: $seafoam-blue;
 
   &--flower {
     height: 37px;

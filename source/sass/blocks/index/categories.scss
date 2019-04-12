@@ -14,9 +14,10 @@
 }
 
 .categories__title {
+  margin: 88px 24px auto;
+
   text-align: center;
   align-self: center;
-  margin: 88px 24px auto;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
@@ -33,6 +34,7 @@
   align-items: center;
   height: 103px;
   padding: 0 30px;
+
   background-color: $seafoam-blue;
 
   a {
@@ -49,6 +51,7 @@
 .categories__name {
   flex: 1 1 auto;
   margin-right: 30px;
+
   font-size: 19px;
   font-weight: bold;
   color: white;
@@ -56,6 +59,7 @@
 
 .categories__svg {
   color: $blue-green;
-  opacity: 0.5;
   font-size: 62px;
+
+  opacity: 0.5;
 }

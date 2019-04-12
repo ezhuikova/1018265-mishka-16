@@ -1,7 +1,7 @@
 .button {
   display: block;
   padding: 15px;
-  background-color: white;
+
   text-align: center;
   font-size: 17px;
   font-weight: bold;
@@ -10,6 +10,8 @@
   text-transform: uppercase;
   border: 2px solid $gray-color;
   color: $gray-color;
+
+  background-color: white;
 
   &:hover {
     background: $gray-color;

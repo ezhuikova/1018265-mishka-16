@@ -5,16 +5,18 @@
 
 .categories__header {
   display: flex;
+  min-height: 300px;
   justify-content: center;
-  min-height: 283px;
-  background: url("../../../img/hero-mobile@1x.jpg") no-repeat center center;
-  background-size: cover;
+  margin-top: -17px;
+
+  background: url("../../../img/hero-mobile@1x.jpg") no-repeat center top;
+  background-size: auto;
 }
 
 .categories__title {
   text-align: center;
   align-self: center;
-  margin: 76px 39px auto;
+  margin: 88px 24px auto;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
@@ -32,6 +34,12 @@
   height: 103px;
   padding: 0 30px;
   background-color: $seafoam-blue;
+
+  a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 
   &:nth-child(2n) {
     background-color: darken($seafoam-blue, 5%);

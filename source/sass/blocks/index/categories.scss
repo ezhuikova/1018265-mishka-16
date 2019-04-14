@@ -33,7 +33,6 @@
   justify-content: space-between;
   align-items: center;
   height: 103px;
-  padding: 0 30px;
 
   background-color: $seafoam-blue;
 
@@ -41,6 +40,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 0 30px;
   }
 
   &:nth-child(2n) {

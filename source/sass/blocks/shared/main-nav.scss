@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.main-nav__list {
+  @include no-list();
+  display: none;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: calc(50% - 7px);

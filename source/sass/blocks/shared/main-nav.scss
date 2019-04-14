@@ -1,10 +1,9 @@
 .main-nav {
-  position: relative;
+  background-color: white;
 }
 
 .main-nav__list {
   @include no-list();
-  display: none;
 }
 
 .main-nav__toggle {

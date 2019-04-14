@@ -1,6 +1,10 @@
 .page-header {
   position: relative;
   z-index: 2;
+}
+
+.page-header__wrapper {
+  position: relative;
 
   display: flex;
   justify-content: center;

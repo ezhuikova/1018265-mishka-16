@@ -24,6 +24,12 @@
   font-weight: bold;
   color: black;
 
+  i {
+    display: block;
+    text-align: center;
+    width: 76px;
+  }
+
   &:hover,
   &:focus {
     color: rgba(black, 0.6);
@@ -33,23 +39,17 @@
     color: rgba(black, 0.3);
   }
 
-  i {
-    display: block;
-    text-align: center;
-    width: 76px;
+  &:hover .site-list__icon,
+  &:focus .site-list__icon {
+    opacity: 1;
+    fill: $seafoam-blue;
+  }
+
+  &:active .site-list__icon {
+    opacity: 0.3;
   }
 }
 
 .site-list__icon {
   opacity: 0.2;
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-    fill: $seafoam-blue;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }

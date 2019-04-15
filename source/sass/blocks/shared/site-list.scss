@@ -18,17 +18,13 @@
   width: 100%;
   min-height: 79px;
   padding-right: $margin;
+  padding-left: 76px;
 
   line-height: 24px;
   font-size: 17px;
   font-weight: bold;
   color: black;
 
-  i {
-    display: block;
-    text-align: center;
-    width: 76px;
-  }
 
   &:hover,
   &:focus {
@@ -51,5 +47,8 @@
 }
 
 .site-list__icon {
+  position: absolute;
+  left: 30px;
+
   opacity: 0.2;
 }

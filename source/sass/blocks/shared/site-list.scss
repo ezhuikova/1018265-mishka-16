@@ -18,11 +18,13 @@
   width: 100%;
   min-height: 79px;
   padding-right: $margin;
+  padding-left: 76px;
 
   line-height: 24px;
   font-size: 17px;
   font-weight: bold;
   color: black;
+
 
   &:hover,
   &:focus {
@@ -33,23 +35,20 @@
     color: rgba(black, 0.3);
   }
 
-  i {
-    display: block;
-    text-align: center;
-    width: 76px;
-  }
-}
-
-.site-list__icon {
-  opacity: 0.2;
-
-  &:hover,
-  &:focus {
+  &:hover .site-list__icon,
+  &:focus .site-list__icon {
     opacity: 1;
     fill: $seafoam-blue;
   }
 
-  &:active {
+  &:active .site-list__icon {
     opacity: 0.3;
   }
+}
+
+.site-list__icon {
+  position: absolute;
+  left: 30px;
+
+  opacity: 0.2;
 }

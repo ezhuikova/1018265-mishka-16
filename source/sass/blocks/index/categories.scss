@@ -25,6 +25,7 @@
 
 .categories__list {
   @include no-list();
+  z-index: 3;
 }
 
 .categories__item {
@@ -37,6 +38,8 @@
   background-color: $seafoam-blue;
 
   a {
+    position: relative;
+
     display: flex;
     align-items: center;
     width: 100%;
@@ -45,6 +48,23 @@
 
   &:nth-child(2n) {
     background-color: darken($seafoam-blue, 5%);
+  }
+
+  &:hover {
+    margin-top: -5px;
+    height: 108px;
+  }
+
+  &:active .categories__svg {
+    opacity: 0.3;
+  }
+
+  &:hover .categories__svg {
+    opacity: 0.7;
+  }
+
+  &:active .categories__name {
+    opacity: 0.3;
   }
 }
 

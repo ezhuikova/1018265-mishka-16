@@ -25,6 +25,7 @@
 
 .categories__list {
   @include no-list();
+  z-index: 3;
 }
 
 .categories__item {
@@ -50,11 +51,8 @@
   }
 
   &:hover {
+    margin-top: -5px;
     height: 108px;
-  }
-
-  &:hover a {
-    top: -5px;
   }
 
   &:active .categories__svg {

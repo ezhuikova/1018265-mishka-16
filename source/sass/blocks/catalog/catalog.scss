@@ -14,13 +14,13 @@
 }
 
 .catalog__image {
+  display: block;
   width: 100%;
   height: auto;
 }
 
-.catalog__item-description-wrapper {
-  margin-top: -6px;
-  padding: $margin 28px 0;
+.catalog__description-wrapper {
+  padding: 26px 28px 0;
 
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -50,13 +50,13 @@
   }
 }
 
-.catalog__item-description {
+.catalog__description {
   font-size: 13px;
   line-height: 30px;
   color: $gray-color;
 }
 
-.catalog__item-price {
+.catalog__price {
   font-size: 15px;
   font-weight: bold;
   line-height: 24px;

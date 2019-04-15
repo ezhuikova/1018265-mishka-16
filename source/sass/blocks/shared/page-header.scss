@@ -1,0 +1,28 @@
+.page-header {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header__wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  min-height: 80px;
+
+  background-color: white;
+}
+
+.page-header__logo {
+  display: flex;
+  flex: 1 1 auto;
+  margin: auto;
+}
+
+.page-header__logo-image {
+  margin: 0 auto;
+  width: 86px;
+  height: 35px;
+
+  object-fit: contain;
+}

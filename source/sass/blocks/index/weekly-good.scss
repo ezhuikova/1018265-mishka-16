@@ -1,0 +1,85 @@
+.weekly-good {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background: url("../../../img/bg-zigzag-line.svg") repeat-x;
+    background-size: contain;
+  }
+}
+
+.weekly-good__header {
+  margin-bottom: 10px;
+}
+
+.weekly-good__title {
+  @include title();
+}
+
+.weekly-good__subtitle {
+  margin: 0;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+}
+
+.weekly-good__description {
+  margin-bottom: 17px;
+
+  font-size: 15px;
+  line-height: 24px;
+  color: $gray-color;
+}
+
+.weekly-good__info {
+  border-collapse: collapse;
+  margin-bottom: 28px;
+
+  line-height: 24px;
+}
+
+.weekly-good__row {
+  height: 39px;
+
+  fill: $gray-color;
+  border-bottom: 1px solid lightgray;
+}
+
+.weekly-good__name {
+  padding-right: 12px;
+}
+
+.weekly-good__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+
+  object-fit: contain;
+}
+
+.weekly-good__price {
+  margin-bottom: 24px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  color: $gray-color;
+}
+
+.weekly-good__order {
+  margin-bottom: 10px;
+}

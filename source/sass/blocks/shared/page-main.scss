@@ -1,6 +1,23 @@
 .page-main {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
 
   position: relative;
+}
+
+.page-main__title-wrapper {
+  display: flex;
+
+  min-height: 177px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $white-two;
+}
+
+.page-main__title {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
 }

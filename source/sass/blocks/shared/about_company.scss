@@ -1,0 +1,67 @@
+.about_company {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.about_company__header {
+  margin-bottom: 30px;
+}
+
+.about_company__title {
+  @include title();
+}
+
+.about_company__list {
+  @include no-list();
+}
+
+.about_company__item {
+  padding-bottom: 28px;
+
+  i {
+    display: block;
+    width: 55px;
+    height: 37px;
+    margin-bottom: 19px;
+  }
+}
+
+.about_company__description {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.about-company__svg {
+  width: 55px;
+
+  fill: $seafoam-blue;
+
+  &--flower {
+    height: 37px;
+  }
+
+  &--money {
+    height: 27px;
+  }
+
+  &--heart {
+    height: 27px;
+  }
+
+  &--ball {
+    height: 34px;
+  }
+
+  &--rocket {
+    height: 23px;
+  }
+
+  &--gift {
+    height: 32px;
+  }
+}

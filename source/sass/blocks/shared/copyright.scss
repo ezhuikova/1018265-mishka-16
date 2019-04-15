@@ -1,0 +1,15 @@
+.copyright__text {
+  margin-right: 24px;
+
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.copyright__text-svg {
+  font-size: 40px;
+
+  &--academy {
+    color: $seafoam-blue;
+  }
+}

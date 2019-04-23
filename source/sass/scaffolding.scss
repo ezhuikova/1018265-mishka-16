@@ -1,8 +1,9 @@
 @import "variables";
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: $font;
+  max-width: $desktop-width;
 }
 
 .icon {

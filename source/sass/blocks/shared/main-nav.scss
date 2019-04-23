@@ -1,5 +1,8 @@
 .main-nav {
+  flex-basis: 100%;
+
   background-color: white;
+  z-index: 1;
 }
 
 .main-nav__list {
@@ -8,7 +11,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: calc(50% - 7px);
+  top: 32px;
   right: 30px;
 
   width: 20px;
@@ -18,4 +21,20 @@
 
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav__list {
+    padding-left: 50px;
+  }
 }

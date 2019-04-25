@@ -1,4 +1,6 @@
 .categories {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 }
@@ -25,6 +27,7 @@
 .categories__list {
   @include no-list();
   z-index: 3;
+  width: 100%;
 }
 
 .categories__item {
@@ -81,4 +84,72 @@
   font-size: 62px;
 
   opacity: 0.5;
+}
+
+.categories__bottom-svg {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .categories__header {
+    background-size: cover;
+    background-position-y: 0;
+    min-height: 741px;
+  }
+
+  .categories__title {
+    margin: 151px 0 auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .categories__list {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      height: 34px;
+      width: 100%;
+
+
+      background-image: url("http://localhost:3000/symbol-defs.svg#icon-bg-zigzag-fill");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+
+      //background: url("#icon-bg-zigzag-fill") bottom repeat-x;
+    }
+  }
+
+  .categories__item {
+    flex: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    margin-top: -98px;
+    z-index: 1;
+  }
+
+  .categories__header {
+    min-height: 753px;
+  }
+
+  .categories__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

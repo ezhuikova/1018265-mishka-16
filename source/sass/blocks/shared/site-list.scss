@@ -9,8 +9,8 @@
     border-bottom: $site-item-border;
   }
 
-  &---new,
-  &---sale {
+  &--new,
+  &--sale {
     display: none;
   }
 }
@@ -68,6 +68,8 @@
   }
 
   .site-list__item {
+    min-height: 88px;
+
     &:not(:first-child) {
       border-top: unset;
     }
@@ -76,12 +78,12 @@
       border-bottom: unset;
     }
 
-    &---cart {
+    &--cart {
       min-width: 316px;
     }
 
-    &---search {
-      margin-left: calc(100% - (316px + 84px + 2px));
+    &--search {
+      margin-left: auto;
       width: 84px;
       border-left: $site-item-border;
       border-right: $site-item-border;
@@ -91,57 +93,67 @@
       }
     }
 
-    &---form,
-    &---catalog {
+    &--catalog,
+    &--form {
+      position: absolute;
+      top: 88px;
+      left: 50px;
+
       .site-list__link {
-        @include additionalMenuLink();
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 19px;
+
+        font-size: 15px;
       }
-
-      order: 1;
     }
 
-    &---cart,
-    &---search {
-      order: 0;
-      background-color: white;
+    &--form {
+      left: 220px;
     }
-  }
-
-  .site-list__link {
-    min-height: 88px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     flex-wrap: nowrap;
+    padding-left: 20px;
   }
 
   .site-list__item {
-    &---search {
-      margin-left: auto;
-    }
-
-    &---form,
-    &---catalog {
-      align-items: center;
-      order: 0;
-
-      .site-list__link {
-        padding-top: unset;
-        align-items: center;
-        min-width: $desktop-site-item-width;
-      }
-    }
-
-    &---new,
-    &---sale {
+    &--new,
+    &--sale {
       display: flex;
+      min-width: $desktop-site-item-width;
 
       .site-list__link {
-        @include additionalMenuLink();
-        min-width: $desktop-site-item-width;
+        align-items: flex-start;
+        padding-left: 30px;
+        padding-top: 19px;
+
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 24px;
+        color: black;
       }
+    }
+
+    &--catalog,
+    &--form {
+      top: 0;
+      left: 15px;
+      width: 234px;
+
+      .site-list__link {
+        font-size: 17px;
+        align-items: center;
+        padding: 0 35px;
+      }
+    }
+
+    &--form {
+      left: 235px;
+      border-left: $site-item-border;
     }
   }
 }

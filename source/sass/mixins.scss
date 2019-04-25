@@ -12,15 +12,3 @@
   color: black;
   line-height: 30px;
 }
-
-@mixin additionalMenuLink() {
-  align-items: flex-start;
-  padding-left: 50px;
-  padding-top: 19px;
-  margin-left: -50px;
-
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 24px;
-  color: black;
-}

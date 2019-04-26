@@ -7,25 +7,6 @@
   min-height: 80px;
 }
 
-//position: relative;
-//display: flex;
-//justify-content: center;
-//align-items: center;
-//min-height: 80px;
-//height: 80px;
-//
-//border-bottom: 1px solid $gray;
-//.page-header__wrapper {
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//
-//  display: flex;
-//  width: 100%;
-//  background-color: white;
-//  border-bottom: $site-item-border;
-//}
-
 .page-header__logo {
   display: flex;
   min-height: 80px;
@@ -50,12 +31,6 @@
     flex-direction: row;
     min-height: 88px;
   }
-
-  //.page-header__wrapper {
-  //  min-height: 88px;
-  //  display: block;
-  //}
-
 
   .page-header__logo {
     position: absolute;

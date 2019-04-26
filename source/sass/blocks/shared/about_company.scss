@@ -65,3 +65,38 @@
     height: 32px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about_company__title {
+    @include titleTablet();
+  }
+
+  .about_company__header {
+    margin-bottom: 53px;
+  }
+
+  .about_company__item {
+    padding-bottom: 60px;
+    width: 50%;
+  }
+
+  .about_company__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about_company__title {
+    @include titleDesktop();
+  }
+  .about_company__list {
+    align-content: flex-start;
+  }
+
+  .about_company__item {
+    width: 40%;
+  }
+}

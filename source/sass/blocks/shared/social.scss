@@ -2,15 +2,11 @@
 .social__list {
   @include no-list();
   display: flex;
-  padding: 0 25%;
   margin: 0 auto;
   height: $footer-row-height;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  max-width: 150px;
-
-  text-align: center;
+  width: 145px;
 }
 
 .social__link {
@@ -20,7 +16,6 @@
 
 .social__link-svg {
   font-size: 22px;
-  padding: 0 10px;
 
   &:hover,
   &:focus {

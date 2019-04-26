@@ -21,3 +21,36 @@
 
   background-color: white;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 143px;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    width: 102px;
+    margin-left: 50px;
+  }
+
+  .page-footer__divider {
+    display: none;
+  }
+
+  .page-footer__copyright {
+    height: unset;
+    margin-right: 50px;
+  }
+
+  .page-footer__social {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}

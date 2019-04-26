@@ -12,3 +12,13 @@
   color: black;
   line-height: 30px;
 }
+
+@mixin titleTablet() {
+  font-size: 43px;
+  line-height: 50px;
+}
+
+@mixin titleDesktop() {
+  font-size: 53px;
+  line-height: 57px;
+}

@@ -2,3 +2,15 @@
   margin: 0;
   padding: $margin;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 52px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 70px 50px 70px 225px;
+  }
+}

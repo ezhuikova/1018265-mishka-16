@@ -105,26 +105,27 @@
 
   .categories__list {
     position: absolute;
-    bottom: 10px;
+    bottom: -16px;
     left: 0;
 
     display: flex;
     flex-basis: 100%;
     flex-direction: row;
+    margin: 0 52px;
 
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       right: 0;
       bottom: 0;
       left: 0;
       z-index: 1000;
-      height: 34px;
+      height: 24px;
       width: 100%;
 
 
-      background-image: url("http://localhost:3000/symbol-defs.svg#icon-bg-zigzag-fill");
+      background-image: url("../../../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: 100%;
@@ -135,6 +136,7 @@
 
   .categories__item {
     flex: 50%;
+    height: 130px;
   }
 }
 

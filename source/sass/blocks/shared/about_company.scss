@@ -92,6 +92,7 @@
   .about_company__title {
     @include titleDesktop();
   }
+
   .about_company__list {
     align-content: flex-start;
   }

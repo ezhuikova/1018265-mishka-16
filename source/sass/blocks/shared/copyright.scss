@@ -4,6 +4,7 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
+  color: black;
 }
 
 .copyright__text-svg {
@@ -12,4 +13,9 @@
   &--academy {
     color: $seafoam-blue;
   }
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
 }

@@ -5,19 +5,19 @@
   flex-direction: column;
 
   background-color: white;
-}
 
-.weekly-good__footer {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
 
-  width: 100%;
-  height: 6px;
+    width: 100%;
+    height: 6px;
 
-  background: url("../../../img/bg-zigzag-line.svg") repeat-x;
-  background-size: contain;
+    background: url("/img/bg-zigzag-line.svg") repeat-x;
+    background-size: contain;
+  }
 }
 
 .weekly-good__header {
@@ -46,6 +46,7 @@
 }
 
 .weekly-good__description {
+  min-height: 77px;
   margin-bottom: 17px;
 
   font-size: 15px;
@@ -94,11 +95,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .weekly-good::after {
+    height: 14px;
+  }
+
   .weekly-good__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //min-height: 80px;
     margin-bottom: 29px;
   }
 
@@ -123,7 +127,6 @@
 
   .weekly-good__description {
     margin-bottom: 36px;
-    width: 45%;
 
     font-size: 17px;
     line-height: 30px;
@@ -133,6 +136,10 @@
     margin-bottom: 56px;
   }
 
+  .weekly-good__name {
+    width: 34%;
+  }
+
   .weekly-good__price {
     font-size: 20px;
     margin-bottom: 34px;
@@ -140,18 +147,20 @@
 
   .weekly-good__order,
   .weekly-good__price,
-  .weekly-good__info {
-    width: 37.8%;
-  }
-
-  .weekly-good__footer {
-    height: 14px;
+  .weekly-good__info,
+  .weekly-good__description {
+    width: 43%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .weekly-good {
     padding-top: 118px;
+
+    &::after {
+      height: 18px;
+      bottom: -12px;
+    }
   }
 
   .weekly-good__image {
@@ -179,16 +188,8 @@
 
   .weekly-good__description,
   .weekly-good__price,
-  .weekly-good__info {
-    width: 34%;
-  }
-
+  .weekly-good__info,
   .weekly-good__order {
-    width: 30%;
-  }
-
-  .weekly-good__footer {
-    height: 18px;
-    bottom: -12px;
+    width: 34%;
   }
 }

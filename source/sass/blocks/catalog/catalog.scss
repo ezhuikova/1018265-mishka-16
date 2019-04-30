@@ -94,8 +94,7 @@
   .catalog__item {
     display: flex;
     flex-direction: row;
-
-    height: 333px;
+    min-height: 333px;
     margin-bottom: 52px;
   }
 
@@ -152,15 +151,18 @@
   .catalog__list {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .catalog__item {
     flex-direction: column;
-    height: 659px;
+    min-height: 659px;
+    height: auto;
+    width: 316px;
   }
 
   .catalog__description-wrapper {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
 
     &:hover {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);

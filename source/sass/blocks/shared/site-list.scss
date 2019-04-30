@@ -126,21 +126,23 @@
   .site-list__item {
     &--new,
     &--sale {
+      position: absolute;
+      top: 88px;
+      left: 50px;
+
       display: flex;
       align-items: flex-start;
-      min-width: $desktop-site-item-width;
 
       .site-list__link {
-        align-items: flex-start;
-        margin-left: 30px;
+        padding-left: 0;
         margin-top: 19px;
-        padding: 0;
 
         font-size: 15px;
-        font-weight: bold;
-        line-height: 24px;
-        color: black;
       }
+    }
+
+    &--sale {
+      left: 270px;
     }
 
     &--catalog,

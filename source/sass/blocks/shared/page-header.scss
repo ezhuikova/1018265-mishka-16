@@ -5,8 +5,6 @@
   display: flex;
   flex-direction: column;
   min-height: 80px;
-
-  border-bottom: $site-item-border;
 }
 
 .page-header__logo {
@@ -21,7 +19,6 @@
 
 .page-header__logo-wrapper {
   display: flex;
-  flex-basis: 100%;
   height: 80px;
   align-items: center;
   justify-content: center;
@@ -47,16 +44,15 @@
     justify-content: center;
     height: 88px;
     padding: 0 40px 0 50px;
+
+    border-bottom: $site-item-border;
   }
 
   .page-header__logo-wrapper {
     justify-content: flex-start;
+    flex-basis: 100%;
     height: 100%;
   }
-  //  display: flex;
-  //  flex: 1 1 auto;
-  //  min-height: auto;
-  //}
 
   .page-header__logo-image {
     width: 112px;

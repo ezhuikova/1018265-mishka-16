@@ -46,9 +46,15 @@
   .page-footer__logo {
     display: flex;
     width: 102px;
+  }
+
+  .page-footer__logo-img {
+    width: 102px;
+    height: 34px;
+    fill: black;
 
     &:hover {
-      opacity: 0.6;
+      fill: $greeny-blue;
     }
 
     &:active {

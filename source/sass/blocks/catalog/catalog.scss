@@ -100,7 +100,7 @@
 
   .catalog__image-link,
   .catalog__description-wrapper {
-    flex: 50%;
+    flex-basis: 50%;
   }
 
   .catalog__image {
@@ -156,13 +156,13 @@
 
   .catalog__item {
     flex-direction: column;
-    min-height: 659px;
     height: auto;
     width: 316px;
   }
 
   .catalog__description-wrapper {
-    flex: 1 1 100%;
+    flex-grow: 1;
+    flex-basis: auto;
 
     &:hover {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -173,7 +173,11 @@
     }
   }
 
+  .catalog__description {
+    margin-bottom: 15px;
+  }
+
   .catalog__image-link {
-    flex: 60%;
+    flex-basis: auto;
   }
 }

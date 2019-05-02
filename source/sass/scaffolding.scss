@@ -1,8 +1,10 @@
 @import "variables";
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: $font;
+  max-width: $desktop-width;
+  min-width: $mobile-width;
 }
 
 .icon {
@@ -12,6 +14,13 @@ body {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 a {

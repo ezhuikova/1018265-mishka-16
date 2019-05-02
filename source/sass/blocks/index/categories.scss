@@ -1,4 +1,6 @@
 .categories {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 }
@@ -8,7 +10,7 @@
   min-height: 283px;
   justify-content: center;
 
-  background: url("../../../img/hero-mobile@1x.jpg") no-repeat center -17px;
+  background: url("/img/hero-mobile@1x.jpg") no-repeat center -17px;
   background-size: auto;
 }
 
@@ -25,6 +27,7 @@
 .categories__list {
   @include no-list();
   z-index: 3;
+  width: 100%;
 }
 
 .categories__item {
@@ -63,7 +66,8 @@
 
   display: flex;
   align-items: center;
-  width: 100%;
+  flex-basis: 100%;
+  height: 100%;
   padding: 0 30px;
 }
 
@@ -81,4 +85,81 @@
   font-size: 62px;
 
   opacity: 0.5;
+}
+
+.categories__bottom-svg {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .categories::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    z-index: 3;
+    height: 34px;
+
+    display: block;
+
+    background-image: url("/img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+  }
+
+  .categories__header {
+    background-size: cover;
+    background-position-y: 0;
+    min-height: 746px;
+  }
+
+  .categories__title {
+    margin: 151px 0 auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .categories__list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    margin: 0 52px;
+    width: 86.5%;
+  }
+
+  .categories__item {
+    flex: 50%;
+    height: 120px;
+
+    &:hover {
+      margin-top: -5px;
+      height: 125px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    z-index: 1;
+  }
+
+  .categories__header {
+    min-height: 753px;
+  }
+
+  .categories__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .categories__list {
+    bottom: 7px;
+    width: 91%;
+  }
 }

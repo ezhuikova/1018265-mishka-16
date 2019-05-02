@@ -1,5 +1,6 @@
 .main-nav {
   background-color: white;
+  z-index: 1;
 }
 
 .main-nav__list {
@@ -14,8 +15,31 @@
   width: 20px;
   height: 14px;
 
-  background: transparent url("../../../img/icon-menu-open.svg") no-repeat;
+  background: transparent url("/img/icon-menu-open.svg") no-repeat;
 
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+
+    background-color: transparent;
+  }
+
+  .main-nav__list {
+    min-height: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    flex-basis: 100%;
+  }
 }

@@ -163,6 +163,10 @@
     flex-direction: column;
     height: auto;
     width: 316px;
+
+    &:last-child {
+      margin-bottom: 52px;
+    }
   }
 
   .catalog__description-wrapper {

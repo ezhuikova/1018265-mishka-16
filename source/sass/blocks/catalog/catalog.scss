@@ -96,6 +96,10 @@
     flex-direction: row;
     min-height: 333px;
     margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 11px;
+    }
   }
 
   .catalog__image-link,
@@ -105,6 +109,7 @@
 
   .catalog__image {
     height: 100%;
+    width: auto;
     overflow: hidden;
   }
 

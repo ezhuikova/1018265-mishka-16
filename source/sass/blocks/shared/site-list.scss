@@ -69,11 +69,11 @@
     height: 100%;
 
     &:not(:first-child) {
-      border-top: unset;
+      border-top: none;
     }
 
     &:last-child {
-      border-bottom: unset;
+      border-bottom: none;
     }
 
     &--cart {

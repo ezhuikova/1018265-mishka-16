@@ -4,18 +4,57 @@
   <meta charset="utf-8">
   <title>Магазин «Мишка»</title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/ie-support.js"></script>
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__wrapper">
+  <div class="page-header__logo-wrapper">
     <a class="page-header__logo" href="/">
-      <img class="page-header__logo-image" src="../../img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+      <picture class="page-header__logo-image">
+        <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+        <source srcset="img/logo-tablet.svg" media="(min-width: 772px)">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+      </picture>
     </a>
-    <button class="main-nav__toggle" type="button"></button>
+    <button class="main-nav__toggle"></button>
   </div>
 
-</header>
+  <nav class="main-nav">
+    <ul class="main-nav__list site-list">
 
+      <li class="site-list__item site-list__item--catalog">
+        <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+      </li>
+
+      <li class="site-list__item site-list__item--form">
+        <a class="site-list__link" href="form.html">Вязание на заказ</a>
+      </li>
+
+      <li class="site-list__item site-list__item--search">
+        <a class="site-list__link" href="#">
+          <svg class="site-list__icon site-list__icon--search" width="18" height="18">
+            <use href="symbol-defs.svg#icon-icon-search"></use>
+          </svg>Поиск по сайту</a>
+      </li>
+
+      <li class="site-list__item  site-list__item--cart">
+        <a class="site-list__link" href="shopping-cart.html">
+          <svg class="site-list__icon site-list__icon--cart" width="18" height="18">
+            <use href="symbol-defs.svg#icon-icon-cart"></use>
+          </svg>Корзина: пока пуста</a>
+      </li>
+      <li class="site-list__item site-list__item--new">
+        <a class="site-list__link" href="catalog.html">Новые поступления</a>
+      </li>
+
+      <li class="site-list__item site-list__item--sale">
+        <a class="site-list__link" href="catalog.html">Распродажа</a>
+      </li>
+    </ul>
+  </nav>
+  <span class="page-header__delivery">Бесплатная доставка по России</span>
+
+</header>
 <main class="page-main">
   <h1 class="visually-hidden">Страница товаров</h1>
 
@@ -27,14 +66,18 @@
     <ul class="catalog__list">
       <li class="catalog__item">
         <a class="catalog__image-link" href="#">
-          <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x">
+            <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
         </a>
         <div class="catalog__description-wrapper">
           <a href="#" class="catalog__item-title">Зайчик-попрыгайчик</a>
           <span class="catalog__description">Рост 30 см, вес 200г</span>
           <div class="catalog__item-divider"></div>
           <div class="catalog__buy-wrapper">
-            <b class="catalog__price">1200 руб.</b>
+            <b class="catalog__price">1 200 руб.</b>
             <a class="catalog__item-cart" href="shopping-cart.html">
               <svg class="catalog__item-icon-buy" width="18" height="18">
                 <use href="symbol-defs.svg#icon-icon-cart"></use>
@@ -46,7 +89,11 @@
 
       <li class="catalog__item">
         <a class="catalog__image-link" href="#">
-          <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x">
+            <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+          </picture>
         </a>
 
         <div class="catalog__description-wrapper">
@@ -65,10 +112,14 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__image-link" href="#">
-          <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x">
+            <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+          </picture>
         </a>
         <div class="catalog__description-wrapper">
-          <a href="#" class="catalog__item-title">Большая корзинка для игрушек</a>
+          <a href="#" class="catalog__item-title">Большая корзинка<br/> для игрушек</a>
           <span class="catalog__description">Диаметр 30 см, высота 30 см</span>
           <div class="catalog__item-divider"></div>
           <div class="catalog__buy-wrapper">
@@ -88,7 +139,13 @@
 </main>
 
 <footer class="page-footer">
-
+  <div class="page-footer__logo-wrapper">
+    <a class="page-footer__logo" href="index.html">
+      <svg class="page-footer__logo-img icon" >
+        <use href="symbol-defs.svg#icon-logo-footer"></use>
+      </svg>
+    </a>
+  </div>
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
@@ -116,12 +173,15 @@
   </div>
   <div class="page-footer__divider"></div>
   <div class="page-footer__copyright copyright">
-    <b class="copyright__text">Разработано</b>
-    <svg class="copyright__text-svg copyright__text-svg--academy icon">
-      <use href="symbol-defs.svg#icon-htmlacademy"></use>
-    </svg>
+    <a class="copyright__link" href="http://htmlacademy.ru">
+      <b class="copyright__text">Разработано</b>
+      <svg class="copyright__text-svg copyright__text-svg--academy icon">
+        <use href="symbol-defs.svg#icon-htmlacademy"></use>
+      </svg>
+    </a>
   </div>
 
 </footer>
+
 </body>
 </html>

@@ -1,11 +1,12 @@
 .container {
-  margin: 0;
+  margin: 0 auto;
   padding: $margin;
 }
 
 @media (min-width: $tablet-width) {
   .container {
     padding: 52px 50px;
+    max-width: 668px;
   }
 }
 

@@ -4,12 +4,24 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
+  color: black;
 }
 
-.copyright__text-svg {
+.copyright__text-svg--academy {
   font-size: 40px;
+  fill: $seafoam-blue;
+}
 
-  &--academy {
-    color: $seafoam-blue;
+.copyright__link {
+  display: flex;
+  align-items: center;
+
+  &:hover .copyright__text-svg--academy {
+    fill: $greeny-blue;
+  }
+
+  &:active .copyright__text-svg--academy,
+  &:active .copyright__text {
+    opacity: 0.3;
   }
 }

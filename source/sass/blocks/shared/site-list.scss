@@ -1,5 +1,6 @@
 .site-list__item {
   display: flex;
+  height: 79px;
 
   &:not(:first-child) {
     border-top: $site-item-border;
@@ -8,6 +9,11 @@
   &:last-child {
     border-bottom: $site-item-border;
   }
+
+  &--new,
+  &--sale {
+    display: none;
+  }
 }
 
 .site-list__link {
@@ -15,9 +21,6 @@
 
   display: flex;
   align-items: center;
-  width: 100%;
-  min-height: 79px;
-  padding-right: $margin;
   padding-left: 76px;
 
   line-height: 24px;
@@ -51,4 +54,118 @@
   left: 30px;
 
   opacity: 0.2;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    flex-wrap: nowrap;
+  }
+
+  .site-list__item {
+    height: 100%;
+
+    &:not(:first-child) {
+      border-top: unset;
+    }
+
+    &:last-child {
+      border-bottom: unset;
+    }
+
+    &--cart {
+      min-width: 265px;
+    }
+
+    &--cart .site-list__link {
+      padding-left: 83px;
+    }
+
+    &--search {
+      width: 82px;
+
+      border-left: $site-item-border;
+      border-right: $site-item-border;
+    }
+
+    &--search .site-list__link {
+      font-size: 0;
+    }
+
+    &--catalog,
+    &--form {
+      position: absolute;
+      top: 88px;
+      left: 50px;
+
+      align-items: flex-start;
+
+      .site-list__link {
+        padding-left: 0;
+        margin-top: 19px;
+
+        font-size: 15px;
+      }
+    }
+
+    &--form {
+      left: 220px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item:first-child .site-list__link {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .site-list__item {
+    &--new,
+    &--sale {
+      position: absolute;
+      top: 88px;
+      left: 50px;
+
+      display: flex;
+      align-items: flex-start;
+
+      .site-list__link {
+        padding-left: 0;
+        margin-top: 19px;
+
+        font-size: 15px;
+      }
+    }
+
+    &--sale {
+      left: 270px;
+    }
+
+    &--catalog,
+    &--form {
+      position: relative;
+      align-items: stretch;
+      top: auto;
+      left: auto;
+
+      .site-list__link {
+        font-size: 17px;
+        align-items: center;
+        padding: 0 35px;
+        margin: unset;
+      }
+    }
+
+    &--form {
+      border-left: $site-item-border;
+    }
+
+    &--search {
+      margin-left: auto;
+    }
+  }
 }

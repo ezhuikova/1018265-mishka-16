@@ -1,4 +1,3 @@
-
 .social__list {
   @include no-list();
   display: flex;
@@ -6,7 +5,7 @@
   height: $footer-row-height;
   justify-content: space-between;
   align-items: center;
-  width: 145px;
+  width: 141px;
 }
 
 .social__link {
@@ -20,5 +19,9 @@
   &:hover,
   &:focus {
     color: $blue-green;
+  }
+
+  &--facebook {
+    font-size: 31px;
   }
 }

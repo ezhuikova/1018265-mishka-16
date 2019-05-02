@@ -8,9 +8,20 @@
 }
 
 .page-header__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo-wrapper {
   display: flex;
-  min-height: 80px;
+  height: 80px;
   align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 
@@ -29,23 +40,30 @@
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
-    min-height: 88px;
+    align-items: stretch;
+    justify-content: center;
+    height: 88px;
+    padding: 0 40px 0 50px;
+
+    border-bottom: $site-item-border;
   }
 
-  .page-header__logo {
-    position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translateY(-50%);
+  .page-header__logo-wrapper {
+    position: relative;
 
-    display: block;
-    min-height: auto;
+    justify-content: flex-start;
+    flex-basis: 100%;
+    height: 100%;
+  }
+
+  .page-header__logo-image {
+    width: 112px;
   }
 
   .page-header__delivery {
     position: absolute;
     top: 107px;
-    right: 51px;
+    right: 40px;
 
     display: inline-block;
 
@@ -58,9 +76,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
+  .page-header__logo-wrapper {
+    flex-basis: auto;
+    position: absolute;
     left: 50%;
-    top: 25%;
+    top: 50%;
     transform: translate(-50%, -50%);
 
     display: flex;

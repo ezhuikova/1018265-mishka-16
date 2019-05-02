@@ -1,5 +1,6 @@
 .site-list__item {
   display: flex;
+  height: 79px;
 
   &:not(:first-child) {
     border-top: $site-item-border;
@@ -20,9 +21,6 @@
 
   display: flex;
   align-items: center;
-  width: 100%;
-  min-height: 79px;
-  padding-right: $margin;
   padding-left: 76px;
 
   line-height: 24px;
@@ -64,11 +62,11 @@
     flex-direction: row;
     justify-content: flex-start;
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .site-list__item {
-    min-height: 88px;
+    height: 100%;
 
     &:not(:first-child) {
       border-top: unset;
@@ -79,18 +77,22 @@
     }
 
     &--cart {
-      min-width: 316px;
+      min-width: 265px;
+    }
+
+    &--cart .site-list__link {
+      padding-left: 83px;
     }
 
     &--search {
-      margin-left: auto;
-      width: 84px;
+      width: 82px;
+
       border-left: $site-item-border;
       border-right: $site-item-border;
+    }
 
-      span {
-        display: none;
-      }
+    &--search .site-list__link {
+      font-size: 0;
     }
 
     &--catalog,
@@ -99,10 +101,11 @@
       top: 88px;
       left: 50px;
 
+      align-items: flex-start;
+
       .site-list__link {
-        align-items: flex-start;
         padding-left: 0;
-        padding-top: 19px;
+        margin-top: 19px;
 
         font-size: 15px;
       }
@@ -115,45 +118,54 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list {
-    flex-wrap: nowrap;
-    padding-left: 20px;
+  .site-list__item:first-child .site-list__link {
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .site-list__item {
     &--new,
     &--sale {
+      position: absolute;
+      top: 88px;
+      left: 50px;
+
       display: flex;
-      min-width: $desktop-site-item-width;
+      align-items: flex-start;
 
       .site-list__link {
-        align-items: flex-start;
-        padding-left: 30px;
-        padding-top: 19px;
+        padding-left: 0;
+        margin-top: 19px;
 
         font-size: 15px;
-        font-weight: bold;
-        line-height: 24px;
-        color: black;
       }
+    }
+
+    &--sale {
+      left: 270px;
     }
 
     &--catalog,
     &--form {
-      top: 0;
-      left: 15px;
-      width: 234px;
+      position: relative;
+      align-items: stretch;
+      top: auto;
+      left: auto;
 
       .site-list__link {
         font-size: 17px;
         align-items: center;
         padding: 0 35px;
+        margin: unset;
       }
     }
 
     &--form {
-      left: 235px;
       border-left: $site-item-border;
+    }
+
+    &--search {
+      margin-left: auto;
     }
   }
 }

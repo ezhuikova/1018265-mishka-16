@@ -1,6 +1,4 @@
 .main-nav {
-  flex-basis: 100%;
-
   background-color: white;
   z-index: 1;
 }
@@ -11,13 +9,13 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 32px;
+  top: calc(50% - 7px);
   right: 30px;
 
   width: 20px;
   height: 14px;
 
-  background: transparent url("../../../img/icon-menu-open.svg") no-repeat;
+  background: transparent url("/img/icon-menu-open.svg") no-repeat;
 
   border: none;
   cursor: pointer;
@@ -29,12 +27,19 @@
   }
 
   .main-nav {
-    background-color: transparent;
     display: flex;
     flex-direction: column;
+
+    background-color: transparent;
   }
 
   .main-nav__list {
-    padding-left: 50px;
+    min-height: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    flex-basis: 100%;
   }
 }

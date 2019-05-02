@@ -7,59 +7,47 @@
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo" href="/">
-    <picture class="page-header__logo-image">
-      <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
-      <source srcset="img/logo-tablet.svg" media="(min-width: 772px)">
-      <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-    </picture>
-  </a>
-  <button class="main-nav__toggle" type="button"></button>
-
+  <div class="page-header__logo-wrapper">
+    <a class="page-header__logo" href="/">
+      <picture class="page-header__logo-image">
+        <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+        <source srcset="img/logo-tablet.svg" media="(min-width: 772px)">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+      </picture>
+    </a>
+    <button class="main-nav__toggle"></button>
+  </div>
 
   <nav class="main-nav">
     <ul class="main-nav__list site-list">
 
       <li class="site-list__item site-list__item--catalog">
-        <a class="site-list__link" href="catalog.html">
-          Каталог товаров
-        </a>
+        <a class="site-list__link" href="catalog.html">Каталог товаров</a>
       </li>
 
       <li class="site-list__item site-list__item--form">
-        <a class="site-list__link" href="form.html">
-          Вязание на заказ</a>
+        <a class="site-list__link" href="form.html">Вязание на заказ</a>
       </li>
 
       <li class="site-list__item site-list__item--search">
         <a class="site-list__link" href="#">
           <svg class="site-list__icon site-list__icon--search" width="18" height="18">
             <use href="symbol-defs.svg#icon-icon-search"></use>
-          </svg>
-          <span>Поиск по сайту</span>
-        </a>
+          </svg>Поиск по сайту</a>
       </li>
 
       <li class="site-list__item  site-list__item--cart">
         <a class="site-list__link" href="shopping-cart.html">
           <svg class="site-list__icon site-list__icon--cart" width="18" height="18">
             <use href="symbol-defs.svg#icon-icon-cart"></use>
-          </svg>
-          <span>Корзина</span>
-        </a>
+          </svg>Корзина: пока пуста</a>
       </li>
-    </ul>
-    <ul class="main-nav__list site-list">
       <li class="site-list__item site-list__item--new">
-        <a class="site-list__link" href="catalog.html">
-          <span>Новые поступления</span>
-        </a>
+        <a class="site-list__link" href="catalog.html">Новые поступления</a>
       </li>
 
       <li class="site-list__item site-list__item--sale">
-        <a class="site-list__link" href="catalog.html">
-          <span>Распродажа</span>
-        </a>
+        <a class="site-list__link" href="catalog.html">Распродажа</a>
       </li>
     </ul>
   </nav>
@@ -92,7 +80,6 @@
         </a>
       </li>
     </ul>
-    <div class="categories__footer"></div>
   </section>
 
   <section class="weekly-good container">
@@ -123,7 +110,7 @@
       <img class="weekly-good__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
 
       <b class="weekly-good__price">Цена: 990 руб</b>
-      <a href="cart.html" class="weekly-good__order button" type="button">Заказать</a>
+      <a href="cart.html" class="weekly-good__order button">Заказать</a>
     </div>
     <div class="weekly-good__footer"></div>
   </section>
@@ -188,9 +175,13 @@
 </main>
 
 <footer class="page-footer">
-  <a class="page-footer__logo" href="index.html">
-    <img class="page-footer__logo-img" src="img/logo-footer.svg" width="102" height="34" alt="Магазин «Мишка»">
-  </a>
+  <div class="page-footer__logo-wrapper">
+    <a class="page-footer__logo" href="index.html">
+      <svg class="page-footer__logo-img icon" >
+        <use href="symbol-defs.svg#icon-logo-footer"></use>
+      </svg>
+    </a>
+  </div>
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
@@ -218,10 +209,12 @@
   </div>
   <div class="page-footer__divider"></div>
   <div class="page-footer__copyright copyright">
-    <b class="copyright__text">Разработано</b>
-    <svg class="copyright__text-svg copyright__text-svg--academy icon">
-      <use href="symbol-defs.svg#icon-htmlacademy"></use>
-    </svg>
+    <a class="copyright__link" href="http://htmlacademy.ru">
+      <b class="copyright__text">Разработано</b>
+      <svg class="copyright__text-svg copyright__text-svg--academy icon">
+        <use href="symbol-defs.svg#icon-htmlacademy"></use>
+      </svg>
+    </a>
   </div>
 
 </footer>

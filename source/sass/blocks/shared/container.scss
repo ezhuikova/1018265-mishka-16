@@ -1,16 +1,22 @@
 .container {
-  margin: 0;
+  margin: 0 auto;
   padding: $margin;
+  width: 260px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    padding: 52px 50px;
+    padding: 52px 0;
+    //padding: 52px 50px;
+    width: 668px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    padding: 70px 50px 70px 225px;
+    padding: 70px 0 70px 175px;
+    //padding: 70px 50px 70px 225px;
+    width: 1050px;
   }
 }

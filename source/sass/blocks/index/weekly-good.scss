@@ -111,6 +111,7 @@
   }
 
   .weekly-good__subtitle {
+    line-height: 17px;
     max-width: 70px;
     text-align: center;
     margin-right: 28px;
@@ -155,7 +156,7 @@
 
 @media (min-width: $desktop-width) {
   .weekly-good {
-    padding-top: 118px;
+    padding-top: 45px;
 
     &::after {
       height: 18px;
@@ -168,6 +169,10 @@
     top: -141px;
   }
 
+  .weekly-good__header {
+    position: relative;
+  }
+
   .weekly-good__title {
     @include titleDesktop();
     z-index: 4;
@@ -175,7 +180,7 @@
 
   .weekly-good__subtitle {
     position: absolute;
-    left: 97px;
+    left: -130px;
   }
 
   .weekly-good__description {
@@ -190,6 +195,6 @@
   .weekly-good__price,
   .weekly-good__info,
   .weekly-good__order {
-    width: 34%;
+    width: 32.6%;;
   }
 }

@@ -93,6 +93,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 500px;
+    min-height: 100px; //фикс для IE
     margin-bottom: -24px;
   }
 }

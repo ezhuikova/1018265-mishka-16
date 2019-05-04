@@ -54,7 +54,7 @@
 
 .contacts__write-button {
   width: 260px;
-  margin: 40px auto;
+  margin: 10px auto;
 }
 
 .contacts__map::before {
@@ -128,24 +128,23 @@
 
   .contacts__write-button {
     width: 230px;
-    margin: 56px auto;
+    margin: 4px auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
-    max-width: $desktop-width;
-    margin: 0 auto 105px;
   }
 
   .contacts__values-container {
     padding-top: 142px;
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
 
   .contacts__table tbody {
     flex-direction: column;
+    display: block;
   }
 
   .contacts__title {
@@ -174,8 +173,12 @@
     margin: 0;
   }
 
+  .contacts__write-container {
+    padding-bottom: 0;
+  }
+
   .contacts__write-button {
     margin-bottom: 0;
-    margin-left: $desktop-container-margin-left;
+    margin-left: 0;
   }
 }

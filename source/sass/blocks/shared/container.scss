@@ -8,7 +8,8 @@
 @media (min-width: $tablet-width) {
   .container {
     padding: 52px 0;
-    width: $tablet-container-width;
+    width: 87%;
+    max-width: 1000px;
   }
 }
 
@@ -16,5 +17,6 @@
   .container {
     padding: 70px 0 70px $desktop-container-margin-left;
     width: $desktop-container-width;
+    max-width: $desktop-width;
   }
 }

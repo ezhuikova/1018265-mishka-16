@@ -1,3 +1,5 @@
+"use strict";
+
 (function () {
   const elements = document.getElementsByClassName("no-js") || [];
 

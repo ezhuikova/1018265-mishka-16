@@ -53,7 +53,7 @@
 }
 
 .contacts__write-button {
-  width: 260px;
+  width: $mobile-button-max-width;
   margin: 10px auto;
 }
 
@@ -135,12 +135,14 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
+    width: $desktop-container-width;
+    max-width: $desktop-width;
     margin: 0 auto 105px;
   }
 
   .contacts__values-container {
     padding-top: 142px;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .contacts__table tbody {
@@ -161,8 +163,8 @@
   }
 
   .contacts__table {
-    margin-bottom: 0;
-    width: 35%;
+    margin-bottom: 10px;
+    width: 40%;
   }
 
   .contacts__map {
@@ -176,10 +178,10 @@
 
   .contacts__write-container {
     padding-bottom: 0;
+    padding-left: 125px;
   }
 
   .contacts__write-button {
-    margin-bottom: 0;
-    margin-left: 0;
+    margin: 0 auto 0 0;
   }
 }

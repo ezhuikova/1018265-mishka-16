@@ -78,7 +78,8 @@
 }
 
 .weekly-good__order {
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
+  width: $mobile-button-max-width;
 }
 
 @media (min-width: $tablet-width) {
@@ -135,6 +136,10 @@
   .weekly-good__info,
   .weekly-good__description {
     width: 43%;
+  }
+
+  .weekly-good__order {
+    margin-left: 0;
   }
 }
 

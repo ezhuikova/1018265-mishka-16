@@ -98,10 +98,14 @@
   }
 
   .reviews__list {
+    order: 2;
     width: 60%;
   }
 
   .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
     margin-top: 0;
   }
 
@@ -123,16 +127,6 @@
   .reviews__toggle {
     width: 87px;
     border: 0;
-  }
-
-  .reviews__title {
-    font-size: 43px;
-    line-height: 50px;
-    margin-bottom: 50px;
-  }
-
-  .reviews__list {
-    order: 2;
   }
 
   .reviews__description {

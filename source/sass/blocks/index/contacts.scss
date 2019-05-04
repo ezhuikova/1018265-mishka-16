@@ -101,7 +101,7 @@
       right: 0;
       width: 47px;
       height: 81px;
-      background-image: url(/img/icon-flag.svg);
+      background-image: url("/img/icon-flag.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -164,6 +164,7 @@
     margin-bottom: 0;
     width: 35%;
   }
+
   .contacts__map {
     position: absolute;
     bottom: 0;

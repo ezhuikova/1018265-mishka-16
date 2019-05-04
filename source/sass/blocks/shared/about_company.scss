@@ -20,6 +20,10 @@
 .about_company__item {
   padding-bottom: 28px;
 
+  &:last-child {
+    padding-bottom: 0;
+  }
+
   i {
     display: block;
     width: 55px;
@@ -67,12 +71,17 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .about_company__title {
     @include titleTablet();
   }
 
   .about_company__header {
     margin-bottom: 53px;
+  }
+
+  .about_company__description {
+    font-size: 20px;
   }
 
   .about_company__item {
@@ -85,6 +94,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 500px;
+    margin-bottom: -24px;
   }
 }
 
@@ -95,9 +105,19 @@
 
   .about_company__list {
     align-content: flex-start;
+    margin-bottom: -38px;
   }
 
   .about_company__item {
     width: 40%;
+
+    i {
+      margin-bottom: 13px;
+    }
+  }
+
+  .about_company__description {
+    font-size: 20px;
+    line-height: 22px;
   }
 }

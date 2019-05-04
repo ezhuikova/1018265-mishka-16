@@ -5,19 +5,6 @@
   flex-direction: column;
 
   background-color: white;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 6px;
-
-    background: url("/img/bg-zigzag-line.svg") repeat-x;
-    background-size: contain;
-  }
 }
 
 .weekly-good__header {
@@ -47,7 +34,7 @@
 
 .weekly-good__description {
   min-height: 77px;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 
   font-size: 15px;
   line-height: 24px;
@@ -95,19 +82,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .weekly-good::after {
-    height: 14px;
-  }
 
   .weekly-good__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
   }
 
   .weekly-good__title {
     @include titleTablet();
+    margin: -8px 0 0 0;
   }
 
   .weekly-good__subtitle {
@@ -120,7 +105,7 @@
 
   .weekly-good__image {
     position: absolute;
-    top: 24px;
+    top: 10px;
     right: 0;
     bottom: 0;
     width: 334px;
@@ -156,12 +141,7 @@
 
 @media (min-width: $desktop-width) {
   .weekly-good {
-    padding-top: 45px;
-
-    &::after {
-      height: 18px;
-      bottom: -12px;
-    }
+    padding-top: 54px;
   }
 
   .weekly-good__image {
@@ -176,6 +156,7 @@
   .weekly-good__title {
     @include titleDesktop();
     z-index: 4;
+    margin: 0;
   }
 
   .weekly-good__subtitle {
@@ -195,6 +176,6 @@
   .weekly-good__price,
   .weekly-good__info,
   .weekly-good__order {
-    width: 32.6%;;
+    width: 32.6%;
   }
 }

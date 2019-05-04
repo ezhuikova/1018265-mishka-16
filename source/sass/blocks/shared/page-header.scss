@@ -39,13 +39,25 @@
   display: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  .page-header--menu-opened .main-nav__toggle {
+    height: 20px;
+
+    background-image: url("/img/icon-menu-close.svg");
+  }
+
+  .page-header--menu-opened .site-list {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
     height: 88px;
-    padding: 0 40px 0 50px;
+    padding: 0 50px;
 
     border-bottom: $site-item-border;
   }
@@ -63,7 +75,7 @@
   .page-header__delivery {
     position: absolute;
     top: 107px;
-    right: 40px;
+    right: 50px;
 
     display: inline-block;
 

@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "fonts";
 @import "scaffolding.scss";
+@import "blocks/index/map.scss";
 @import "blocks/shared/page-footer.scss";
 @import "blocks/shared/page-header.scss";
 @import "blocks/shared/page-main.scss";
@@ -13,6 +14,10 @@
 @import "blocks/shared/container.scss";
 @import "blocks/shared/visually-hidden.scss";
 @import "blocks/shared/site-list.scss";
+@import "blocks/shared/zigzag.scss";
+@import "blocks/shared/no-js.scss";
 @import "blocks/index/categories.scss";
 @import "blocks/index/weekly-good.scss";
+@import "blocks/index/reviews.scss";
+@import "blocks/index/contacts.scss";
 @import "blocks/catalog/catalog.scss";

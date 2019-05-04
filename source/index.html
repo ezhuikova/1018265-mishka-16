@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header no-js">
   <div class="page-header__logo-wrapper">
     <a class="page-header__logo" href="/">
       <picture class="page-header__logo-image">
@@ -86,7 +86,7 @@
     </ul>
   </section>
 
-  <section class="weekly-good">
+  <section class="weekly-good zigzag">
     <div class="container">
       <header class="weekly-good__header">
         <h2 class="weekly-good__title">Вязаные корзинки</h2>
@@ -179,6 +179,67 @@
     </ul>
   </section>
 
+  <section class="reviews zigzag">
+    <div class="reviews__container container">
+      <header class="reviews__header">
+        <h2 class="reviews__title">Отзывы</h2>
+      </header>
+      <div class="reviews__list">
+
+        <figure class="reviews__item">
+          <blockquote class="reviews__description">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+            стильными, а также набирают больше лайков!
+          </blockquote>
+          <figcaption class="reviews__author">
+            <span class="reviews__author-name">Анастасия Красильникова</span>
+            <cite class="reviews__author-account">@misssssiskras</cite>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <p class="reviews__toggles">
+        <button class="reviews__toggle reviews__toggle--prev" title="Предыдущий отзыв"></button>
+        <button class="reviews__toggle reviews__toggle--next" title="Следующий отзыв"></button>
+      </p>
+
+      <a class="reviews__write button"
+         href="#">Написать</a>
+
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__values-container container">
+      <h2 class="contacts__title">Контакты</h2>
+      <table class="contacts__table">
+        <tr class="contacts__row">
+          <td class="contacts__name">e-mail:</td>
+          <td class="contacts__value">
+            <a class="contacts__value--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </td>
+        </tr>
+        <tr class="contacts__row">
+          <td class="contacts__name">адрес:</td>
+          <td class="contacts__value">г. Санкт-Петербург, ул.Большая Конюшенная, д. 19/8, офис 101</td>
+        </tr>
+      </table>
+    </div>
+    <div class="contacts__map map">
+      <iframe class="map__widget" src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" height="457" width="320"
+              frameborder="0" allowfullscreen></iframe>
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x">
+        <img class="map__image" src="img/map-mobile@1x.jpg"
+             alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+      </picture>
+    </div>
+    <a class="contacts__write-button button" href="feedback.html">Напишите нам</a>
+  </section>
+
 </main>
 
 <footer class="page-footer">
@@ -225,6 +286,8 @@
   </div>
 
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

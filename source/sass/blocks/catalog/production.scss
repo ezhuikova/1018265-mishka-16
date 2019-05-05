@@ -151,7 +151,7 @@
     padding-top: 98px;
     padding-left: $catalog-production-description-padding-left;
     margin-top: 0;
-    width: $catalog-production-description-width;
+    width: 35%;
 
     &::before {
       left: $catalog-production-description-padding-left;
@@ -160,13 +160,13 @@
   }
 
   .production__video-wrapper {
-    width: 65%;
+    width: 685px;
   }
 
   .production__description-wrapper {
     @include catalogShadowBlock($hoverY: 0, $activeY: 0);
 
-    width: $catalog-production-description-width;
+    width: calc(100% - 685px);
     margin-top: -180px;
     padding-top: 180px;
     padding-left: $catalog-production-description-padding-left;

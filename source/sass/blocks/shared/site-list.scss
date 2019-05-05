@@ -6,9 +6,7 @@
   display: flex;
   height: 79px;
 
-  &:not(:first-child) {
-    border-top: $site-item-border;
-  }
+  border-top: $site-item-border;
 
   &:last-child {
     border-bottom: $site-item-border;

@@ -36,14 +36,18 @@
         <a class="site-list__link" href="#">
           <svg class="site-list__icon site-list__icon--search" width="18" height="18">
             <use href="symbol-defs.svg#icon-icon-search"></use>
-          </svg>Поиск по сайту</a>
+          </svg>
+          Поиск по сайту
+        </a>
       </li>
 
       <li class="site-list__item  site-list__item--cart">
         <a class="site-list__link" href="shopping-cart.html">
           <svg class="site-list__icon site-list__icon--cart" width="18" height="18">
             <use href="symbol-defs.svg#icon-icon-cart"></use>
-          </svg>Корзина: пока пуста</a>
+          </svg>
+          Корзина: пока пуста
+        </a>
       </li>
       <li class="site-list__item site-list__item--new">
         <a class="site-list__link" href="catalog.html">Новые поступления</a>
@@ -138,12 +142,37 @@
 
   </section>
 
+  <section class="production container">
+    <header class="production__header">
+      <h2 class="production__title">Процесс производства</h2>
+    </header>
+    <div class="production__video-wrapper">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x">
+        <img class="production__video-img" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+      </picture>
+
+      <button class="production__play-button" aria-label="Воспроизвести">
+        <svg class="production__play-icon" width="101" height="77">
+          <use xlink:href="symbol-defs.svg#icon-icon-play"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="production__description-wrapper">
+      <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+        как появляются наши товары.</p>
+      <a class="production__order-button button" href="form.html">Сделать заказ</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="page-footer">
   <div class="page-footer__logo-wrapper">
     <a class="page-footer__logo" href="index.html">
-      <svg class="page-footer__logo-img icon" >
+      <svg class="page-footer__logo-img icon">
         <use href="symbol-defs.svg#icon-logo-footer"></use>
       </svg>
     </a>

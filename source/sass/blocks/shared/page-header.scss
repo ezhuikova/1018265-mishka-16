@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   min-height: 80px;
+
+  border-bottom: $site-item-border;
 }
 
 .page-header__logo {
@@ -58,8 +60,6 @@
     justify-content: center;
     height: 88px;
     padding: 0 50px;
-
-    border-bottom: $site-item-border;
   }
 
   .page-header__logo-wrapper {

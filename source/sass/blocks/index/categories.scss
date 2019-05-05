@@ -30,6 +30,7 @@
   @include no-list();
   z-index: 3;
   width: 100%;
+  max-width: $max-width;
 }
 
 .categories__item {
@@ -48,6 +49,8 @@
   &:hover {
     margin-top: -5px;
     height: 108px;
+
+    transition: all 0.3s;
   }
 
   &:active .categories__svg {
@@ -137,13 +140,15 @@
   .categories__list {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: flex;
     flex-basis: 100%;
     flex-direction: row;
     margin: 0 52px;
     width: 86.5%;
+
+    transform: translateX(-50%);
   }
 
   .categories__item {
@@ -152,7 +157,7 @@
 
     &:hover {
       margin-top: -5px;
-      height: 125px;
+      height: 124px;
     }
   }
 }

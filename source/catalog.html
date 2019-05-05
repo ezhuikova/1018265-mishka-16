@@ -12,10 +12,10 @@
 <header class="page-header no-js">
   <div class="page-header__logo-wrapper">
     <a class="page-header__logo" href="/">
-      <picture class="page-header__logo-image">
+      <picture>
         <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
-        <source srcset="img/logo-tablet.svg" media="(min-width: 772px)">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+        <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
       </picture>
     </a>
     <button class="main-nav__toggle"></button>
@@ -81,7 +81,6 @@
         <div class="catalog__description-wrapper">
           <a href="#" class="catalog__item-title">Зайчик-попрыгайчик</a>
           <span class="catalog__description">Рост 30 см, вес 200г</span>
-          <div class="catalog__item-divider"></div>
           <div class="catalog__buy-wrapper">
             <b class="catalog__price">1 200 руб.</b>
             <a class="catalog__item-cart" href="shopping-cart.html">
@@ -105,7 +104,6 @@
         <div class="catalog__description-wrapper">
           <a href="#" class="catalog__item-title">Корзинка для белья</a>
           <span class="catalog__description">Диаметр 15 см, высота 10 см</span>
-          <div class="catalog__item-divider"></div>
           <div class="catalog__buy-wrapper">
             <b class="catalog__price">690 руб.</b>
             <a class="catalog__item-cart" href="shopping-cart.html">
@@ -127,7 +125,6 @@
         <div class="catalog__description-wrapper">
           <a href="#" class="catalog__item-title">Большая корзинка<br/> для игрушек</a>
           <span class="catalog__description">Диаметр 30 см, высота 30 см</span>
-          <div class="catalog__item-divider"></div>
           <div class="catalog__buy-wrapper">
             <b class="catalog__price">1500 руб.</b>
             <a class="catalog__item-cart" href="shopping-cart.html">
@@ -171,7 +168,7 @@
 
 <footer class="page-footer">
   <div class="page-footer__logo-wrapper">
-    <a class="page-footer__logo" href="index.html">
+    <a class="page-footer__logo" href="index.html" aria-label="Магазин «Мишка»">
       <svg class="page-footer__logo-img icon">
         <use href="symbol-defs.svg#icon-logo-footer"></use>
       </svg>
@@ -202,7 +199,6 @@
       </li>
     </ul>
   </div>
-  <div class="page-footer__divider"></div>
   <div class="page-footer__copyright copyright">
     <a class="copyright__link" href="http://htmlacademy.ru">
       <b class="copyright__text">Разработано</b>

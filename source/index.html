@@ -11,10 +11,10 @@
 <header class="page-header no-js">
   <div class="page-header__logo-wrapper">
     <a class="page-header__logo" href="/">
-      <picture class="page-header__logo-image">
+      <picture>
         <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
         <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
       </picture>
     </a>
     <button class="main-nav__toggle"></button>
@@ -112,7 +112,8 @@
           </tr>
         </table>
 
-        <img class="weekly-good__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <img class="weekly-good__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
+             alt="Вязаные корзинки">
 
         <b class="weekly-good__price">Цена: 990 руб</b>
         <a href="cart.html" class="weekly-good__order button">Заказать</a>
@@ -192,8 +193,8 @@
             стильными, а также набирают больше лайков!
           </blockquote>
           <figcaption class="reviews__author">
-            <span class="reviews__author-name">Анастасия Красильникова</span>
-            <cite class="reviews__author-account">@misssssiskras</cite>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <a class="reviews__author-account" href="tg://resolve?domain=misssssiskras">@misssssiskras</a>
           </figcaption>
         </figure>
 
@@ -231,7 +232,8 @@
       <picture>
         <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x">
         <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x">
-        <img class="map__image" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <img class="map__image" src="img/map-mobile@1x.jpg"
+             alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
       </picture>
     </div>
     <div class="contacts__write-container container">
@@ -243,7 +245,7 @@
 
 <footer class="page-footer">
   <div class="page-footer__logo-wrapper">
-    <a class="page-footer__logo" href="index.html">
+    <a class="page-footer__logo" href="index.html" aria-label="Магазин «Мишка»">
       <svg class="page-footer__logo-img icon">
         <use href="symbol-defs.svg#icon-logo-footer"></use>
       </svg>
@@ -274,7 +276,6 @@
       </li>
     </ul>
   </div>
-  <div class="page-footer__divider"></div>
   <div class="page-footer__copyright copyright">
     <a class="copyright__link" href="http://htmlacademy.ru">
       <b class="copyright__text">Разработано</b>

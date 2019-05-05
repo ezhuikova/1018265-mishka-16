@@ -7,12 +7,28 @@
 }
 
 .page-footer__copyright {
+  position: relative;
+
   display: flex;
   justify-content: center;
   height: $footer-row-height;
   align-items: center;
 
   text-align: center;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+
+    display: block;
+    height: 1px;
+
+    background-color: white;
+  }
 }
 
 .page-footer__divider {
@@ -41,6 +57,10 @@
   .page-footer__copyright {
     flex-grow: 1;
     flex-basis: 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   .page-footer__logo {

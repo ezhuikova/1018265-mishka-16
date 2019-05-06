@@ -96,6 +96,10 @@
     background: url("/img/review@1x.jpg") no-repeat;
     background-size: 350px auto;
     box-sizing: content-box;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/review@2x.jpg");
+    }
   }
 
   .reviews__list {

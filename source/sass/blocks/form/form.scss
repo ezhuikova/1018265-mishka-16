@@ -207,16 +207,22 @@
   }
 
   .form__order {
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 50px;
   }
 
   .form__order-wrapper {
-    width: calc(174px + 67%);
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form__order-button {
     margin-left: 174px;
+  }
+
+  .form__order-legend {
+    margin: auto 0;
+    flex-basis: calc(67% - 230px);
+    text-align: right;
   }
 }

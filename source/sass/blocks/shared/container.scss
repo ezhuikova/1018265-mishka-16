@@ -1,16 +1,22 @@
 .container {
-  margin: 0;
-  padding: $margin;
+  margin: 0 auto;
+  padding: $margin 0;
+  width: $mobile-container-width;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    padding: 52px 50px;
+    padding: 52px 0;
+    width: 87%;
+    max-width: 1000px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    padding: 70px 50px 70px 225px;
+    padding: 70px 0 70px $desktop-container-margin-left;
+    width: $desktop-container-width;
+    max-width: $desktop-width;
   }
 }

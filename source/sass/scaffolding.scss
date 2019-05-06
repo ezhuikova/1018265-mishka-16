@@ -1,10 +1,13 @@
-@import "variables";
+
+html {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0 auto;
-  font-family: $font;
-  max-width: $desktop-width;
   min-width: $mobile-width;
+
+  font-family: $font;
 }
 
 .icon {

@@ -3,15 +3,17 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 489px;
+
+  background: url("/img/hero-mobile@1x.jpg") no-repeat center -17px;
+  background-size: auto;
 }
 
 .categories__header {
   display: flex;
-  min-height: 283px;
   justify-content: center;
-
-  background: url("/img/hero-mobile@1x.jpg") no-repeat center -17px;
-  background-size: auto;
 }
 
 .categories__title {
@@ -28,6 +30,7 @@
   @include no-list();
   z-index: 3;
   width: 100%;
+  max-width: $max-width;
 }
 
 .categories__item {
@@ -46,6 +49,8 @@
   &:hover {
     margin-top: -5px;
     height: 108px;
+
+    transition: all 0.3s;
   }
 
   &:active .categories__svg {
@@ -91,28 +96,39 @@
   display: none;
 }
 
+@media (min-width: 575px) and (max-width: $mobile-width-only) {
+  .categories {
+    background-size: contain;
+  }
+}
+
 @media (min-width: $tablet-width) {
-  .categories::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -10px;
-    left: 0;
-    z-index: 3;
-    height: 34px;
+  .categories {
+    min-height: 746px;
+    background-size: cover;
+    background-position: center center;
 
-    display: block;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      left: 0;
+      z-index: 3;
+      height: 24px;
 
-    background-image: url("/img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
+      display: block;
+
+      background-image: url("/img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+      background-size: contain;
+    }
   }
 
   .categories__header {
     background-size: cover;
     background-position-y: 0;
-    min-height: 746px;
   }
 
   .categories__title {
@@ -124,22 +140,24 @@
   .categories__list {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
 
     display: flex;
     flex-basis: 100%;
     flex-direction: row;
     margin: 0 52px;
     width: 86.5%;
+
+    transform: translateX(-50%);
   }
 
   .categories__item {
     flex: 50%;
-    height: 120px;
+    height: 119px;
 
     &:hover {
       margin-top: -5px;
-      height: 125px;
+      height: 124px;
     }
   }
 }
@@ -147,10 +165,12 @@
 @media (min-width: $desktop-width) {
   .categories {
     z-index: 1;
-  }
+    min-height: 746px;
 
-  .categories__header {
-    min-height: 753px;
+    &::after {
+      bottom: -17px;
+      height: 34px;
+    }
   }
 
   .categories__title {
@@ -159,7 +179,6 @@
   }
 
   .categories__list {
-    bottom: 7px;
     width: 91%;
   }
 }

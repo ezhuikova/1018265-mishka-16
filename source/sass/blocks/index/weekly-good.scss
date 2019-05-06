@@ -5,19 +5,6 @@
   flex-direction: column;
 
   background-color: white;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 6px;
-
-    background: url("/img/bg-zigzag-line.svg") repeat-x;
-    background-size: contain;
-  }
 }
 
 .weekly-good__header {
@@ -47,7 +34,7 @@
 
 .weekly-good__description {
   min-height: 77px;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 
   font-size: 15px;
   line-height: 24px;
@@ -91,26 +78,25 @@
 }
 
 .weekly-good__order {
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
+  width: $mobile-button-max-width;
 }
 
 @media (min-width: $tablet-width) {
-  .weekly-good::after {
-    height: 14px;
-  }
-
   .weekly-good__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
   }
 
   .weekly-good__title {
     @include titleTablet();
+    margin: -8px 0 0 0;
   }
 
   .weekly-good__subtitle {
+    line-height: 17px;
     max-width: 70px;
     text-align: center;
     margin-right: 28px;
@@ -119,7 +105,7 @@
 
   .weekly-good__image {
     position: absolute;
-    top: 24px;
+    top: 10px;
     right: 0;
     bottom: 0;
     width: 334px;
@@ -151,16 +137,15 @@
   .weekly-good__description {
     width: 43%;
   }
+
+  .weekly-good__order {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .weekly-good {
-    padding-top: 118px;
-
-    &::after {
-      height: 18px;
-      bottom: -12px;
-    }
+    padding-top: 54px;
   }
 
   .weekly-good__image {
@@ -168,14 +153,20 @@
     top: -141px;
   }
 
+  .weekly-good__header {
+    position: relative;
+  }
+
   .weekly-good__title {
     @include titleDesktop();
     z-index: 4;
+    margin: 0;
   }
 
   .weekly-good__subtitle {
     position: absolute;
-    left: 97px;
+    left: -127px;
+    top: 14px;
   }
 
   .weekly-good__description {
@@ -190,6 +181,6 @@
   .weekly-good__price,
   .weekly-good__info,
   .weekly-good__order {
-    width: 34%;
+    width: 32.6%;
   }
 }

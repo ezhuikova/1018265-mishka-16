@@ -20,6 +20,10 @@
 .about_company__item {
   padding-bottom: 28px;
 
+  &:last-child {
+    padding-bottom: 0;
+  }
+
   i {
     display: block;
     width: 55px;
@@ -75,6 +79,10 @@
     margin-bottom: 53px;
   }
 
+  .about_company__description {
+    font-size: 20px;
+  }
+
   .about_company__item {
     padding-bottom: 60px;
     width: 50%;
@@ -85,6 +93,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 500px;
+    min-height: 100px; //фикс для IE
+    margin-bottom: -24px;
   }
 }
 
@@ -95,9 +105,19 @@
 
   .about_company__list {
     align-content: flex-start;
+    margin-bottom: -38px;
   }
 
   .about_company__item {
     width: 40%;
+
+    i {
+      margin-bottom: 13px;
+    }
+  }
+
+  .about_company__description {
+    font-size: 20px;
+    line-height: 22px;
   }
 }

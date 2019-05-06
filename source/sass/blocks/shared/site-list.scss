@@ -1,10 +1,12 @@
+.site-list {
+  display: none;
+}
+
 .site-list__item {
   display: flex;
   height: 79px;
 
-  &:not(:first-child) {
-    border-top: $site-item-border;
-  }
+  border-top: $site-item-border;
 
   &:last-child {
     border-bottom: $site-item-border;
@@ -22,6 +24,7 @@
   display: flex;
   align-items: center;
   padding-left: 76px;
+  width: 100%;
 
   line-height: 24px;
   font-size: 17px;
@@ -156,7 +159,7 @@
         font-size: 17px;
         align-items: center;
         padding: 0 35px;
-        margin: unset;
+        margin: 0;
       }
     }
 

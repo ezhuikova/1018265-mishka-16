@@ -19,6 +19,29 @@
 }
 
 @mixin titleDesktop() {
+  margin: 0;
   font-size: 53px;
   line-height: 57px;
+}
+
+@mixin catalogMobileTitle() {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  color: black;
+}
+
+@mixin catalogTabletTitle() {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin catalogShadowBlock($hoverX: 6px, $hoverY: 6px, $hoverBlur: 10px,$activeX: 6px, $activeY: 3px, $activeBlur: 5px ) {
+  &:hover {
+    box-shadow: $hoverX $hoverY $hoverBlur rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: $activeX $activeY $activeBlur rgba(0, 0, 0, 0.1);
+  }
 }

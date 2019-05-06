@@ -1,0 +1,187 @@
+.contacts__title {
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__values-container {
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+
+.contacts__table {
+  border-collapse: collapse;
+  margin-bottom: 35px;
+  color: $gray-color;
+
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.contacts__row {
+  display: block;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__name {
+  padding-right: 30px;
+  vertical-align: top;
+}
+
+.contacts__value {
+  padding: 0;
+}
+
+.contacts__value--email {
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid $greeny-blue;
+
+  &:hover,
+  &:focus {
+    color: $greeny-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__write-button {
+  width: $mobile-button-max-width;
+  margin: 10px auto;
+}
+
+.contacts__map::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 43%;
+  left: 53%;
+  width: 67px;
+  height: 100px;
+  background: url("/img/icon-map-pin.svg") no-repeat 50% 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-size: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__values-container {
+    padding-top: 46px;
+  }
+
+  .contacts__title {
+    @include titleDesktop();
+
+    position: relative;
+
+    padding-top: 14px;
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("/img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .contacts__table tbody {
+    display: flex;
+    font-size: 17px;
+  }
+
+  .contacts__table {
+    margin-bottom: 55px;
+    display: block;
+  }
+
+  .contacts__row {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  .contacts__name {
+    padding-right: 24px;
+  }
+
+  .contacts__write-button {
+    width: 230px;
+    margin: 4px auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    width: $desktop-container-width;
+    max-width: $desktop-width;
+    margin: 0 auto 105px;
+  }
+
+  .contacts__values-container {
+    padding-top: 142px;
+    margin: 0;
+  }
+
+  .contacts__table tbody {
+    flex-direction: column;
+    display: block;
+  }
+
+  .contacts__title {
+    margin-bottom: 24px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      left: -106px;
+      top: 5px;
+    }
+  }
+
+  .contacts__table {
+    margin-bottom: 10px;
+    width: 40%;
+  }
+
+  .contacts__map {
+    position: absolute;
+    bottom: 0;
+    left: 50.5%;
+    width: 525px;
+    height: 460px;
+    margin: 0;
+  }
+
+  .contacts__write-container {
+    padding-bottom: 0;
+    padding-left: 125px;
+  }
+
+  .contacts__write-button {
+    margin: 0 auto 0 0;
+  }
+}

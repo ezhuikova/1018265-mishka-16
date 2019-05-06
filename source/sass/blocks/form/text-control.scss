@@ -21,6 +21,7 @@
 
 .text-control__input {
   min-height: 49px;
+  max-width: 100%;
 
   border: 0;
   border-bottom: 2px solid black;
@@ -49,8 +50,13 @@
   }
 }
 
-.text-control--phone .text-control__input {
-  padding-right: 40px;
+.text-control--phone,
+.text-control--email {
+  &.text-control__input {
+    padding-right: 40px;
+
+    box-sizing: border-box;
+  }
 }
 
 .text-control__icon {

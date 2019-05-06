@@ -14,10 +14,6 @@
   border: 0;
 }
 
-.form__fieldset-wrapper {
-  max-width: $mobile-container-width;
-}
-
 .form__fieldset-title {
   display: flex;
   width: 100%;
@@ -59,6 +55,16 @@
     }
   }
 
+  .form__fieldset {
+    &--phone {
+      padding-bottom: 0;
+    }
+
+    &--email {
+      padding-top: 0;
+    }
+  }
+
   .form__fieldset-controls {
     flex: 1 1 0;
   }
@@ -77,12 +83,10 @@
     margin: 0;
   }
 
-  .form__description--wrapper,
-  .form__description {
+  .form__description--wrapper {
     padding-bottom: 10px;
     padding-top: 43px;
   }
-
 
   .form__fieldset-wrapper {
     display: flex;
@@ -112,14 +116,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__fieldset--phone {
-    padding-bottom: 0;
-  }
-
-  .form__fieldset--email {
-    padding-top: 0;
-  }
-
   .form__fieldset-controls {
     flex: 0 1 67%;
   }

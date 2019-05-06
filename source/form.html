@@ -46,8 +46,16 @@
           </svg>
           Корзина: пока пуста</a>
       </li>
+      <li class="site-list__item site-list__item--new">
+        <a class="site-list__link" href="catalog.html">Новые поступления</a>
+      </li>
+
+      <li class="site-list__item site-list__item--sale">
+        <a class="site-list__link" href="catalog.html">Распродажа</a>
+      </li>
     </ul>
   </nav>
+  <span class="page-header__delivery">Бесплатная доставка по России</span>
 
 </header>
 
@@ -59,11 +67,12 @@
   </section>
 
   <section class="order">
-
-    <p class="form__description order__description">
-      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
-      уточнить детали.
-    </p>
+    <div class="form__description--wrapper">
+      <p class="form__description order__description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+        уточнить детали.
+      </p>
+    </div>
 
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__fieldset form__fieldset--type" title="Тип товара">
@@ -113,6 +122,30 @@
           </ul>
         </div>
       </fieldset>
+
+      <fieldset class="form__fieldset form__fieldset--name">
+        <div class="form__fieldset-wrapper">
+          <legend class="form__fieldset-title">ФИО</legend>
+          <ul class="form__fieldset-controls">
+            <li class="form__control text-control">
+              <label class="form__label" for="first-name">Имя:</label>
+              <input class="text-control__input" type="text" id="first-name" name="first-name"
+                     placeholder="Введите ваше имя*" required>
+            </li>
+            <li class="form__control text-control">
+              <label class="form__label" for="last-name">Фамилия:</label>
+              <input class="text-control__input" type="text" id="last-name" name="last-name"
+                     placeholder="Укажите фамилию*" required>
+            </li>
+            <li class="form__control text-control">
+              <label class="form__label" for="patronymic">Отчество:</label>
+              <input class="text-control__input" type="text" id="patronymic" name="patronymic"
+                     placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+
     </form>
   </section>
 

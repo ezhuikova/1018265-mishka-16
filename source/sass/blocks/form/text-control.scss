@@ -1,0 +1,50 @@
+.text-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-bottom: 22px;
+}
+
+.text-control__input {
+  min-height: 50px;
+  border: 0;
+  border-bottom: 2px solid black;
+
+  font-size: 19px;
+  line-height: 18px;
+  color: $gray-color;
+
+  outline: none;
+
+  &::placeholder {
+
+    color: rgba(black, 0.3);
+
+    line-height: 18px;
+    font-size: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $seafoam-light-blue;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .text-control {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .text-control__input {
+    flex-grow: 1;
+    margin-left: 25px;
+
+    text-indent: 18px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+}

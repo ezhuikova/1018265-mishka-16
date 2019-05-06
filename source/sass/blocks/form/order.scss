@@ -1,0 +1,11 @@
+.order__description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .order__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

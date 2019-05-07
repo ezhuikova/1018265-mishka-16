@@ -10,4 +10,5 @@ const isIeBrowser = function () {
 
 if (isIeBrowser()) {
   document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.js" async></script>');
+  document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js" async></script>');
 }

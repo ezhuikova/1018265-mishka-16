@@ -6,7 +6,8 @@
   background-color: #f1f1f1;
 }
 
-.page-footer__copyright {
+.page-footer__copyright,
+.page-footer__social {
   position: relative;
 
   display: flex;
@@ -88,6 +89,7 @@
 
   .page-footer__copyright {
     justify-content: flex-end;
+    padding-right: 20px;
   }
 
   .page-footer__social {

@@ -2,7 +2,6 @@
   @include no-list();
   display: flex;
   margin: 0 auto;
-  height: $footer-row-height;
   justify-content: space-between;
   align-items: center;
   width: 141px;
@@ -14,14 +13,23 @@
 }
 
 .social__link-svg {
-  font-size: 22px;
-
   &:hover,
   &:focus {
     color: $blue-green;
   }
 
   &--facebook {
-    font-size: 31px;
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
   }
 }

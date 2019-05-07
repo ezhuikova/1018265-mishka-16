@@ -7,13 +7,13 @@
   align-items: stretch;
   padding-bottom: 22px;
 
-  &:hover .text-control__input,
-  &:focus .text-control__input {
+  &:hover .text-control__input:not(:disabled),
+  &:focus .text-control__input:not(:disabled) {
     border-color: $seafoam-light-blue;
   }
 
-  &:hover .text-control__icon,
-  &:focus .text-control__icon {
+  &:hover .text-control__input:not(:disabled) + .text-control__icon,
+  &:focus .text-control__input:not(:disabled) + .text-control__icon {
     fill: $seafoam-light-blue;
     opacity: 1;
   }
@@ -48,6 +48,20 @@
     padding: 17px;
     text-indent: 0;
   }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &:invalid {
+    border-color: red;
+  }
+}
+
+.text-control__input:invalid + .text-control__icon {
+  fill: red;
+  opacity: 1;
 }
 
 .text-control--phone,

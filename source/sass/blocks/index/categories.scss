@@ -7,11 +7,11 @@
   align-items: center;
   min-height: 489px;
 
-  background: url("/img/hero-mobile@1x.jpg") no-repeat center -17px;
+  background: $seafoam-blue url("../img/hero-mobile@1x.jpg") no-repeat center -17px;
   background-size: auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("/img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
 
@@ -47,7 +47,7 @@
   background-color: $seafoam-blue;
 
   &:nth-child(2n) {
-    background-color: darken($seafoam-blue, 5%);
+    background-color: $aqua-marine;
   }
 
   &:hover {
@@ -123,16 +123,16 @@
 
       display: block;
 
-      background-image: url("/img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-position: bottom;
       background-size: contain;
     }
 
-    background-image: url("/img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/hero-tablet@2x.jpg");
+      background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
 
@@ -155,7 +155,6 @@
     display: flex;
     flex-basis: 100%;
     flex-direction: row;
-    margin: 0 52px;
     width: 86.5%;
 
     transform: translateX(-50%);
@@ -181,10 +180,10 @@
       bottom: -17px;
       height: 34px;
     }
-    background-image: url("/img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/hero-desktop@2x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
 

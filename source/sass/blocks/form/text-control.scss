@@ -53,15 +53,6 @@
     cursor: default;
     opacity: 0.3;
   }
-
-  &:invalid {
-    border-color: red;
-  }
-}
-
-.text-control__input:invalid + .text-control__icon {
-  fill: red;
-  opacity: 1;
 }
 
 .text-control--phone,

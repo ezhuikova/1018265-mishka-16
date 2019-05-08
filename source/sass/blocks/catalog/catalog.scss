@@ -86,6 +86,9 @@
   }
 }
 
+.catalog__item-cart {
+  cursor: pointer;
+}
 
 @media (min-width: $tablet-width) {
   .catalog__item {

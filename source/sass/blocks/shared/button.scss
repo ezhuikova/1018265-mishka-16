@@ -12,10 +12,18 @@
   border: 2px solid $gray-color;
   color: $gray-color;
 
+  cursor: pointer;
+
   background-color: white;
 
   &:hover {
     background: $gray-color;
     color: white;
   }
+}
+
+.button--modal {
+  color: white;
+  background-color: $seafoam-blue;
+  border: none;
 }

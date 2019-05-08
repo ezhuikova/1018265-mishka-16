@@ -84,7 +84,7 @@
       <li class="categories__item categories__item--toys">
         <a class="categories__link" href="#">
           <p class="categories__name">Детские<br>игрушки</p>
-          <svg class="categories__svg categories__svg--toys icon"  width="60" height="60">
+          <svg class="categories__svg categories__svg--toys icon" width="60" height="60">
             <use href="../img/sprite.svg#icon-toy"></use>
           </svg>
         </a>
@@ -129,7 +129,7 @@
         </picture>
 
         <b class="weekly-good__price">Цена: 990 руб</b>
-        <a href="cart.html" class="weekly-good__order button">Заказать</a>
+        <a class="weekly-good__order button open-add-to-cart-modal-js">Заказать</a>
       </div>
       <div class="weekly-good__footer"></div>
     </div>
@@ -301,6 +301,35 @@
   </div>
 
 </footer>
+
+<!--Add to cart Modal--->
+<div class="modal--add-to-cart modal">
+  <h2 class="modal__title">Добавить в корзину</h2>
+  <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
+    <fieldset class="form__modal-fieldset form__modal-fieldset--size">
+      <legend class="form__modal-fieldset-title">Выберите размер</legend>
+      <ul class="form__modal-control form__modal-control--size">
+        <li class="form__control size">
+          <input class="size__input" type="radio" id="size-s" value="size-s" name="size" checked>
+          <label class="size__label" for="size-s">S</label>
+        </li>
+        <li class="form__control size">
+          <input class="size__input" type="radio" id="size-m" value="size-m" name="size">
+          <label class="size__label" for="size-m">M</label>
+        </li>
+        <li class="form__control size">
+          <input class="size__input" type="radio" id="size-l" value="size-l" name="size">
+          <label class="size__label" for="size-l">L</label>
+
+        </li>
+      </ul>
+    </fieldset>
+    <button class="button modal__action modal__action--add button--modal" type="submit" title="Добавить в корзину">
+      Добавить
+    </button>
+  </form>
+</div>
+<div class="modal__overlay"></div>
 
 <script src="js/script.js"></script>
 

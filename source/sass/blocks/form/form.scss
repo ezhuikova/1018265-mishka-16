@@ -71,6 +71,31 @@
   color: $gray-color;
 }
 
+.form__modal-control--size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.form__modal-fieldset {
+  padding: 0;
+  border: 0;
+}
+
+.form__modal-control {
+  margin: 16px 0;
+}
+
+.form__modal-fieldset-title {
+  display: block;
+  padding: 8px 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
 @media (max-width: $mobile-width-only) {
   .form__fieldset--comment .form__control {
     padding-bottom: 0;

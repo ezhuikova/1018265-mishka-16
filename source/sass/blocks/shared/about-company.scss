@@ -1,23 +1,23 @@
-.about_company {
+.about-company {
   display: flex;
   flex-direction: column;
 
   position: relative;
 }
 
-.about_company__header {
+.about-company__header {
   margin-bottom: 30px;
 }
 
-.about_company__title {
+.about-company__title {
   @include title();
 }
 
-.about_company__list {
+.about-company__list {
   @include no-list();
 }
 
-.about_company__item {
+.about-company__item {
   padding-bottom: 28px;
 
   &:last-child {
@@ -32,7 +32,7 @@
   }
 }
 
-.about_company__description {
+.about-company__description {
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -71,24 +71,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .about_company__title {
+  .about-company__title {
     @include titleTablet();
   }
 
-  .about_company__header {
+  .about-company__header {
     margin-bottom: 53px;
   }
 
-  .about_company__description {
+  .about-company__description {
     font-size: 20px;
   }
 
-  .about_company__item {
+  .about-company__item {
     padding-bottom: 60px;
     width: 50%;
   }
 
-  .about_company__list {
+  .about-company__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,16 +99,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about_company__title {
+  .about-company__title {
     @include titleDesktop();
   }
 
-  .about_company__list {
+  .about-company__list {
     align-content: flex-start;
     margin-bottom: -38px;
   }
 
-  .about_company__item {
+  .about-company__item {
     width: 40%;
 
     i {
@@ -116,7 +116,7 @@
     }
   }
 
-  .about_company__description {
+  .about-company__description {
     font-size: 20px;
     line-height: 22px;
   }

@@ -10,7 +10,7 @@
 
 function toggleMenu() {
   const navMain = document.querySelector(".page-header") || {classList: []};
-  const toggleButton = document.querySelector('.main-nav__toggle') || {};
+  const toggleButton = document.querySelector('.page-header__toggle') || {};
 
   toggleButton.onclick = function () {
     navMain.classList.toggle("page-header--menu-opened");

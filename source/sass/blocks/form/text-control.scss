@@ -42,7 +42,6 @@
   }
 
   &--textarea {
-    min-height: 102px;
     border: 2px solid black;
 
     padding: 17px;
@@ -84,6 +83,10 @@
     width: 32px;
     height: 32px;
   }
+}
+
+.text-control--comment {
+  min-height: 142px;
 }
 
 @media (min-width: $tablet-width) {

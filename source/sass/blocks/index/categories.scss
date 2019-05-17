@@ -15,11 +15,6 @@
   }
 }
 
-.categories__header {
-  display: flex;
-  justify-content: center;
-}
-
 .categories__title {
   margin: 70px 24px auto;
 
@@ -134,11 +129,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
     }
-  }
-
-  .categories__header {
-    background-size: cover;
-    background-position-y: 0;
   }
 
   .categories__title {

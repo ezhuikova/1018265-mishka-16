@@ -17,16 +17,13 @@
 </div>
 
 <header class="page-header no-js">
-  <div class="page-header__logo-wrapper">
-    <a class="page-header__logo" href="/">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-      </picture>
-    </a>
-    <button class="main-nav__toggle"></button>
-  </div>
+  <a class="page-header__logo" href="/">
+    <picture>
+      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+      <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+    </picture>
+  </a>
 
   <nav class="main-nav">
     <ul class="main-nav__list site-list">
@@ -77,12 +74,10 @@
   <section class="order">
     <h2 class="visually-hidden">Форма заказа</h2>
 
-    <div class="form__description--wrapper">
-      <p class="form__description order__description">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
-        уточнить детали.
-      </p>
-    </div>
+    <p class="form__description order__description">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+      уточнить детали.
+    </p>
 
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__fieldset form__fieldset--type" title="Тип товара">
@@ -139,15 +134,18 @@
           <ul class="form__fieldset-controls">
             <li class="form__control text-control">
               <label class="form__label" for="first-name">Имя:</label>
-              <input class="text-control__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
+              <input class="text-control__input" type="text" id="first-name" name="first-name"
+                     placeholder="Введите ваше имя*" required>
             </li>
             <li class="form__control text-control">
               <label class="form__label" for="last-name">Фамилия:</label>
-              <input class="text-control__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
+              <input class="text-control__input" type="text" id="last-name" name="last-name"
+                     placeholder="Укажите фамилию*" required>
             </li>
             <li class="form__control text-control">
               <label class="form__label" for="patronymic">Отчество:</label>
-              <input class="text-control__input" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
+              <input class="text-control__input" type="text" id="patronymic" name="patronymic"
+                     placeholder="Отчество, если желаете">
             </li>
           </ul>
         </div>
@@ -158,7 +156,10 @@
           <span class="form__fieldset-title">тел</span>
           <ul class="form__fieldset-controls">
             <li class="form__control text-control text-control--phone">
-              <input class="text-control__input" type="tel" id="phone" name="first-name" pattern="\+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" title="Телефон" required>
+              <label class="form__label visually-hidden" for="phone">Телефон:</label>
+              <input class="text-control__input" type="tel" id="phone" name="first-name"
+                     pattern="\+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                     title="Телефон" required>
               <svg class="text-control__icon text-control__icon--phone icon" width="25" height="24">
                 <use href="../img/sprite.svg#icon-phone"></use>
               </svg>
@@ -172,7 +173,9 @@
           <span class="form__fieldset-title">e-mail</span>
           <ul class="form__fieldset-controls">
             <li class="form__control text-control text-control--email">
-              <input class="text-control__input" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваш Email*" title="E-mail" required>
+              <label class="form__label visually-hidden" for="email">Ваш Email:</label>
+              <input class="text-control__input" type="email" id="email" name="email"
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваш Email*" title="E-mail" required>
               <svg class="text-control__icon text-control__icon--email icon" width="32" height="32">
                 <use href="../img/sprite.svg#icon-mail"></use>
               </svg>
@@ -186,17 +189,18 @@
           <span class="form__fieldset-title">доп</span>
           <ul class="form__fieldset-controls">
             <li class="form__control text-control text-control--comment">
-              <textarea class="text-control__input text-control__input--textarea" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу" title="Комментарий к заказу"></textarea>
+              <textarea class="text-control__input text-control__input--textarea" id="comment" name="comment"
+                        placeholder="Опишите все ваши пожелания к заказу" title="Комментарий к заказу"></textarea>
             </li>
           </ul>
         </div>
       </fieldset>
 
       <div class="form__order">
-        <div class="form__order-wrapper">
+        <!--<div class="form__order-wrapper">-->
           <small class="form__order-legend">*Поля обязательны для заполнения</small>
           <button class="form__order-button button" type="submit">Отправить заказ</button>
-        </div>
+        <!--</div>-->
       </div>
 
     </form>
@@ -215,22 +219,28 @@
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Instagram" title="Мы в Instagram">
-          <svg class="social__link-svg social__link-svg--instagram icon" width="22" height="21" role="img" focusable="false">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
+           aria-label="Мы в Instagram" title="Мы в Instagram">
+          <svg class="social__link-svg social__link-svg--instagram icon" width="22" height="21" role="img"
+               focusable="false">
             <use href="../img/sprite.svg#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Facebook" title="Мы в Facebook">
-          <svg class="social__link-svg social__link-svg--facebook icon" width="15" height="28" role="img" focusable="false">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+           aria-label="Мы в Facebook" title="Мы в Facebook">
+          <svg class="social__link-svg social__link-svg--facebook icon" width="15" height="28" role="img"
+               focusable="false">
             <use href="../img/sprite.svg#icon-fb"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://www.twittero.com/htmlacademy" aria-label="Мы в Twitter" title="Мы в Facebook">
-          <svg class="social__link-svg social__link-svg--twitter icon" width="24" height="20" role="img" focusable="false">
+        <a class="social__link social__link--twitter" href="https://www.twittero.com/htmlacademy"
+           aria-label="Мы в Twitter" title="Мы в Facebook">
+          <svg class="social__link-svg social__link-svg--twitter icon" width="24" height="20" role="img"
+               focusable="false">
             <use href="../img/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
@@ -240,7 +250,8 @@
   <div class="page-footer__copyright copyright">
     <a class="copyright__link" href="http://htmlacademy.ru" aria-label="HTML Academy" title="HTML Academy">
       <b class="copyright__text">Разработано</b>
-      <svg class="copyright__text-svg copyright__text-svg--academy icon" width="27" height="34" role="img" focusable="false">
+      <svg class="copyright__text-svg copyright__text-svg--academy icon" width="27" height="34" role="img"
+           focusable="false">
         <use href="../img/sprite.svg#logo-htmlacademy"></use>
       </svg>
     </a>

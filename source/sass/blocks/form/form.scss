@@ -3,18 +3,14 @@
 }
 
 .form__description {
-  margin: 16px 0;
-  padding-right: 16px;
-}
-
-.form__fieldset,
-.form__description--wrapper {
-  padding: 5px 30px;
-
-  border: 0;
+  padding: 20px 30px;
+  margin-right: 5%;
 }
 
 .form__fieldset {
+  padding: 5px 30px;
+
+  border: 0;
   &--phone .form__fieldset-title,
   &--email .form__fieldset-title {
     padding-bottom: 6px;
@@ -55,13 +51,17 @@
 .form__order {
   padding: 10px 30px;
   margin-bottom: 45px;
-}
 
-.form__order-wrapper {
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
 }
+
+//.form__order-wrapper {
+//  display: flex;
+//  flex-flow: column nowrap;
+//  align-items: stretch;
+//}
 
 .form__order-legend {
   margin-bottom: 30px;
@@ -103,16 +103,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__fieldset,
-  .form__description--wrapper {
-    padding: 50px 50px 30px 50px;
+  .form__fieldset {
+
+    padding: 50px 50px 29px 50px;
 
     &--background {
       background-color: $white-two;
     }
-  }
-
-  .form__fieldset {
     &--phone {
       padding-bottom: 0;
     }
@@ -137,13 +134,8 @@
   }
 
   .form__description {
-    margin: 0;
-  }
-
-  .form__description--wrapper {
-    padding-bottom: 10px;
-    padding-top: 43px;
-  }
+    padding: 44px 50px 10px;
+   }
 
   .form__fieldset-wrapper {
     display: flex;
@@ -172,13 +164,15 @@
   }
 
   .form__order {
+    flex-direction: row;
+
     padding: 0 50px;
     margin-bottom: 50px;
   }
 
-  .form__order-wrapper {
-    flex-direction: row;
-  }
+  //.form__order-wrapper {
+  //  flex-direction: row;
+  //}
 
   .form__order-legend {
     margin: auto 0 auto auto;
@@ -202,10 +196,6 @@
     flex: 1 1 0;
   }
 
-  .form__description--wrapper {
-    padding-top: 63px;
-  }
-
   .form__fieldset-wrapper {
     margin: 0 auto;
     max-width: $max-width;
@@ -213,8 +203,7 @@
 
   .form__description {
     margin-left: 178px;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 63px;
     width: 67%;
   }
 
@@ -232,14 +221,18 @@
   }
 
   .form__order {
-    padding: 0 50px;
-  }
-
-  .form__order-wrapper {
     max-width: $max-width;
     margin-left: auto;
     margin-right: auto;
+
+    padding: 0 50px;
   }
+
+  //.form__order-wrapper {
+  //  max-width: $max-width;
+  //  margin-left: auto;
+  //  margin-right: auto;
+  //}
 
   .form__order-button {
     margin-left: 174px;

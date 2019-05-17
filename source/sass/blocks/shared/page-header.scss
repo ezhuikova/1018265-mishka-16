@@ -4,13 +4,17 @@
 
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
   min-height: 80px;
   justify-content: center;
+  align-items: center;
 
   border-bottom: $site-item-border;
 }
 
 .page-header__logo {
+  height: 80px;//fix for IE
+
   &:hover {
     opacity: 0.6;
   }
@@ -35,7 +39,7 @@
 
 .page-header__toggle {
   position: absolute;
-  top: calc(50% - 7px);
+  top: 32px;
   right: 30px;
 
   width: 20px;

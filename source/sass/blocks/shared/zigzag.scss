@@ -1,10 +1,11 @@
 .zigzag::after {
   content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
 
+  display: flex;
   width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
   height: 6px;
 
   background: url("../img/bg-zigzag-line.svg") repeat-x;

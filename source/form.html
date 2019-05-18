@@ -8,16 +8,17 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <script src="js/ie-support.js"></script>
 </head>
 <body>
 
-<div style="display:none">
-  <include src="build/img/sprite.svg"></include>
-</div>
+<!--<div style="display:none">-->
+  <!--<include src="build/img/sprite.svg"></include>-->
+<!--</div>-->
 
 <header class="page-header no-js">
-  <a class="page-header__logo" href="/">
+  <a class="page-header__logo" href="/"  tabindex="3">
     <picture>
       <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -29,15 +30,15 @@
     <ul class="main-nav__list site-list">
 
       <li class="site-list__item site-list__item--catalog">
-        <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <a class="site-list__link" href="catalog.html"  tabindex="1">Каталог товаров</a>
       </li>
 
       <li class="site-list__item site-list__item--form">
-        <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        <a class="site-list__link" href="form.html"  tabindex="2">Вязание на заказ</a>
       </li>
 
       <li class="site-list__item site-list__item--search">
-        <a class="site-list__link" href="#">
+        <a class="site-list__link" href="#"  tabindex="4">
           <svg class="site-list__icon site-list__icon--search" width="18" height="18">
             <use href="../img/sprite.svg#icon-search"></use>
           </svg>
@@ -45,18 +46,18 @@
       </li>
 
       <li class="site-list__item  site-list__item--cart">
-        <a class="site-list__link" href="shopping-cart.html">
+        <a class="site-list__link" href="shopping-cart.html"  tabindex="5">
           <svg class="site-list__icon site-list__icon--cart" width="18" height="18">
             <use href="../img/sprite.svg#icon-cart"></use>
           </svg>
           Корзина: пока пуста</a>
       </li>
       <li class="site-list__item site-list__item--new">
-        <a class="site-list__link" href="catalog.html">Новые поступления</a>
+        <a class="site-list__link" href="catalog.html"  tabindex="6">Новые поступления</a>
       </li>
 
       <li class="site-list__item site-list__item--sale">
-        <a class="site-list__link" href="catalog.html">Распродажа</a>
+        <a class="site-list__link" href="catalog.html"  tabindex="7">Распродажа</a>
       </li>
     </ul>
   </nav>
@@ -189,6 +190,7 @@
           <span class="form__fieldset-title">доп</span>
           <ul class="form__fieldset-controls">
             <li class="form__control text-control text-control--comment">
+              <label class="form__label visually-hidden" for="email">Комментарий к заказу:</label>
               <textarea class="text-control__input text-control__input--textarea" id="comment" name="comment"
                         placeholder="Опишите все ваши пожелания к заказу" title="Комментарий к заказу"></textarea>
             </li>
@@ -197,8 +199,8 @@
       </fieldset>
 
       <div class="form__order">
-          <small class="form__order-legend">*Поля обязательны для заполнения</small>
-          <button class="form__order-button button" type="submit">Отправить заказ</button>
+        <small class="form__order-legend">*Поля обязательны для заполнения</small>
+        <button class="form__order-button button" type="submit">Отправить заказ</button>
       </div>
 
     </form>

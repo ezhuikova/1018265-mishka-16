@@ -8,17 +8,18 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <script src="js/ie-support.js"></script>
 </head>
 <body>
-<div style="display:none">
-  <include src="build/img/sprite.svg"></include>
-</div>
+<!--<div style="display:none">-->
+  <!--<include src="build/img/sprite.svg"></include>-->
+<!--</div>-->
 <header class="page-header no-js">
-  <a class="page-header__logo" href="/">
+  <a class="page-header__logo" href="/" tabindex="3">
     <picture>
-      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+      <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
       <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
     </picture>
   </a>
@@ -28,15 +29,15 @@
     <ul class="main-nav__list site-list">
 
       <li class="site-list__item site-list__item--catalog">
-        <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <a class="site-list__link" href="catalog.html" tabindex="1">Каталог товаров</a>
       </li>
 
       <li class="site-list__item site-list__item--form">
-        <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        <a class="site-list__link" href="form.html" tabindex="2">Вязание на заказ</a>
       </li>
 
       <li class="site-list__item site-list__item--search">
-        <a class="site-list__link" href="#">
+        <a class="site-list__link" href="#" tabindex="4">
           <svg class="site-list__icon site-list__icon--search" width="18" height="18">
             <use href="../img/sprite.svg#icon-search"></use>
           </svg>
@@ -44,18 +45,18 @@
       </li>
 
       <li class="site-list__item  site-list__item--cart">
-        <a class="site-list__link" href="shopping-cart.html">
+        <a class="site-list__link" href="shopping-cart.html" tabindex="5">
           <svg class="site-list__icon site-list__icon--cart" width="18" height="18">
             <use href="../img/sprite.svg#icon-cart"></use>
           </svg>
           Корзина: пока пуста</a>
       </li>
       <li class="site-list__item site-list__item--new">
-        <a class="site-list__link" href="catalog.html">Новые поступления</a>
+        <a class="site-list__link" href="catalog.html" tabindex="6">Новые поступления</a>
       </li>
 
       <li class="site-list__item site-list__item--sale">
-        <a class="site-list__link" href="catalog.html">Распродажа</a>
+        <a class="site-list__link" href="catalog.html" tabindex="7">Распродажа</a>
       </li>
     </ul>
   </nav>
@@ -66,11 +67,11 @@
   <h1 class="visually-hidden">Главная страница магазина</h1>
 
   <section class="categories">
-      <h2 class="categories__title">Милые штучки ручной<br>работы для дома</h2>
+    <h2 class="categories__title">Милые штучки ручной<br>работы для дома</h2>
 
     <ul class="categories__list">
       <li class="categories__item categories__item--interior">
-        <a class="categories__link" href="#">
+        <a class="categories__link" href="#" tabindex="8">
           <p class="categories__name">Предметы<br>интерьера</p>
           <svg class="categories__svg categories__svg--interior icon" width="40" height="62">
             <use href="../img/sprite.svg#icon-interior"></use>
@@ -78,7 +79,7 @@
         </a>
       </li>
       <li class="categories__item categories__item--toys">
-        <a class="categories__link" href="#">
+        <a class="categories__link" href="#" tabindex="9">
           <p class="categories__name">Детские<br>игрушки</p>
           <svg class="categories__svg categories__svg--toys icon" width="60" height="60">
             <use href="../img/sprite.svg#icon-toy"></use>
@@ -129,7 +130,7 @@
         </picture>
 
         <b class="weekly-good__price">Цена: 990 руб</b>
-        <a class="weekly-good__order button open-add-to-cart-modal-js">Заказать</a>
+        <a class="weekly-good__order button open-add-to-cart-modal-js" tabindex="10">Заказать</a>
       </div>
       <div class="weekly-good__footer"></div>
     </div>
@@ -142,39 +143,39 @@
 
     <ul class="about-company__list">
       <li class="about-company__item">
-          <svg class="about-company__svg about-company__svg--flower icon" width="32" height="37">
-            <use href="../img/sprite.svg#icon-feature-flower"></use>
-          </svg>
+        <svg class="about-company__svg about-company__svg--flower icon" width="32" height="37">
+          <use href="../img/sprite.svg#icon-feature-flower"></use>
+        </svg>
         <div class="about-company__description">Экологически<br>чистые материалы</div>
       </li>
       <li class="about-company__item">
-          <svg class="about-company__svg about-company__svg--money icon" width="47" height="27">
-            <use href="../img/sprite.svg#icon-feature-money"></use>
-          </svg>
+        <svg class="about-company__svg about-company__svg--money icon" width="47" height="27">
+          <use href="../img/sprite.svg#icon-feature-money"></use>
+        </svg>
         <div class="about-company__description">Скандинавский стиль<br>по российской цене</div>
       </li>
       <li class="about-company__item">
-          <svg class="about-company__svg about-company__svg--heart icon" width="33" height="28">
-            <use href="../img/sprite.svg#icon-feature-heart"></use>
-          </svg>
+        <svg class="about-company__svg about-company__svg--heart icon" width="33" height="28">
+          <use href="../img/sprite.svg#icon-feature-heart"></use>
+        </svg>
         <div class="about-company__description">Увеличивает лайки<br>на фотографиях</div>
       </li>
       <li class="about-company__item">
-          <svg class="about-company__svg about-company__svg--ball icon" width="34" height="34">
-            <use href="../img/sprite.svg#icon-feature-ball"></use>
-          </svg>
+        <svg class="about-company__svg about-company__svg--ball icon" width="34" height="34">
+          <use href="../img/sprite.svg#icon-feature-ball"></use>
+        </svg>
         <div class="about-company__description">Связано вручную с<br>любовью и умилением</div>
       </li>
       <li class="about-company__item">
-          <svg class="about-company__svg about-company__svg--rocket icon" width="54" height="23">
-            <use href="../img/sprite.svg#icon-feature-rocket"></use>
-          </svg>
+        <svg class="about-company__svg about-company__svg--rocket icon" width="54" height="23">
+          <use href="../img/sprite.svg#icon-feature-rocket"></use>
+        </svg>
         <div class="about-company__description">Поддержка отечественного<br>производителя</div>
       </li>
       <li class="about-company__item">
-          <svg class="about-company__svg about-company__svg--gift icon" width="33" height="33">
-            <use href="../img/sprite.svg#icon-feature-gift"></use>
-          </svg>
+        <svg class="about-company__svg about-company__svg--gift icon" width="33" height="33">
+          <use href="../img/sprite.svg#icon-feature-gift"></use>
+        </svg>
         <div class="about-company__description">Поставляется в<br>подарочной упаковке</div>
       </li>
     </ul>
@@ -195,18 +196,18 @@
           </blockquote>
           <figcaption class="reviews__author">
             <cite class="reviews__author-name">Анастасия Красильникова</cite>
-            <a class="reviews__author-account" href="tg://resolve?domain=misssssiskras">@misssssiskras</a>
+            <a class="reviews__author-account" href="tg://resolve?domain=misssssiskras" tabindex="12">@misssssiskras</a>
           </figcaption>
         </figure>
 
       </div>
 
       <p class="reviews__toggles">
-        <button class="reviews__toggle reviews__toggle--prev" title="Предыдущий отзыв"></button>
-        <button class="reviews__toggle reviews__toggle--next" title="Следующий отзыв"></button>
+        <button class="reviews__toggle reviews__toggle--prev" title="Предыдущий отзыв" tabindex="13"></button>
+        <button class="reviews__toggle reviews__toggle--next" title="Следующий отзыв" tabindex="11"></button>
       </p>
 
-      <a class="reviews__write button" href="#">Написать</a>
+      <a class="reviews__write button" href="#" tabindex="11">Написать</a>
 
     </div>
   </section>

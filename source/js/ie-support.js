@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function isIeBrowser() {
   const userAgent = window.navigator.userAgent;
@@ -6,9 +6,9 @@ function isIeBrowser() {
   const trident = userAgent.indexOf('Trident/'); //IE 11
 
   return (msie > 0 || trident > 0);
-};
+}
 
 if (isIeBrowser()) {
-  document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.js" async></script>');
-  document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js" async></script>');
+  document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.js"></script>');
+  document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js"></script>');
 }

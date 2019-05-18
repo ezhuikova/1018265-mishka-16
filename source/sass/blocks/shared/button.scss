@@ -16,9 +16,14 @@
 
   background-color: white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $gray-color;
     color: white;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

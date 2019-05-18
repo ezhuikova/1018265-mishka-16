@@ -3,19 +3,20 @@
 
   display: flex;
   min-height: 40px;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 
   &:hover .checkbox__input:not(:disabled) + .checkbox__label::before {
     border-color: $seafoam-light-blue;
   }
 
   &:active .checkbox__input:not(:disabled) + .checkbox__label::before {
-    border-color: $gray-color;
+    border-color: $white-gray;
   }
 }
 
 .checkbox__input {
-  display: none;
+  width: 0;
+  height: 0;
 }
 
 .checkbox__label {
@@ -56,7 +57,7 @@
   transform: translateY(-50%);
 }
 
-.checkbox__input:not(:disabled):focus + .checkbox__label {
+.checkbox__input:not(:disabled):focus + .checkbox__label::before {
   border-color: $seafoam-light-blue;
 }
 

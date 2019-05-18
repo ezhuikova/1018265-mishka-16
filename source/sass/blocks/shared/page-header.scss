@@ -7,7 +7,6 @@
   flex-basis: 100%;
   min-height: 80px;
   justify-content: center;
-  align-items: center;
 
   border-bottom: $site-item-border;
 }
@@ -58,7 +57,7 @@
     background-image: url("../img/icon-menu-close.svg");
   }
 
-  .page-header--menu-opened .site-list {
+  .page-header--menu-opened .main-nav {
     display: block;
   }
 }
@@ -102,13 +101,14 @@
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    flex-basis: auto;
     position: absolute;
     left: 50%;
     top: 50%;
+    z-index: 2;
     transform: translate(-50%, -50%);
 
     display: flex;
+    flex-basis: auto;
   }
 
   .page-header__logo-image {

@@ -1,19 +1,19 @@
-"use strict";
+'use strict';
 
 (function () {
-  const elements = document.getElementsByClassName("no-js") || [];
+  const elements = document.getElementsByClassName('no-js') || [];
 
   while (elements.length) {
-    elements[0].classList.remove("no-js");
+    elements[0].classList.remove('no-js');
   }
 }());
 
 function toggleMenu() {
-  const navMain = document.querySelector(".page-header") || {classList: []};
+  const navMain = document.querySelector('.page-header') || {classList: []};
   const toggleButton = document.querySelector('.page-header__toggle') || {};
 
   toggleButton.onclick = function () {
-    navMain.classList.toggle("page-header--menu-opened");
+    navMain.classList.toggle('page-header--menu-opened');
   }
 }
 
@@ -21,7 +21,7 @@ function defineModalActions() {
 
   const modal = document.querySelector('.modal--add-to-cart');
   const modalOverlay = document.querySelector('.modal__overlay');
-  const openModalButtons = document.querySelectorAll(".open-add-to-cart-modal-js");
+  const openModalButtons = document.querySelectorAll('.open-add-to-cart-modal-js');
 
   if (!modal || !modalOverlay) return;
 
@@ -41,11 +41,11 @@ function defineModalActions() {
   };
 
   const closeModal = function () {
-    modalOverlay.classList.remove("modal__overlay--show");
-    modal.classList.remove("modal--show");
+    modalOverlay.classList.remove('modal__overlay--show');
+    modal.classList.remove('modal--show');
   };
 
-  document.querySelector("form").addEventListener("submit", function (event) {
+  document.querySelector('form').addEventListener('submit', function (event) {
     closeModal();
     event.preventDefault();
   });

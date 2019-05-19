@@ -6,10 +6,13 @@
   flex-direction: column;
   flex-basis: 100%;
   min-height: 80px;
+  max-width: $max-width;
   justify-content: center;
+  margin: 0 auto;
 
   border-bottom: $site-item-border;
 }
+
 
 .page-header__logo {
   height: 80px;//fix for IE

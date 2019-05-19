@@ -41,11 +41,13 @@
   font-style: normal;
 }
 
-.reviews__author_account {
+.reviews__author-account {
   font-size: 17px;
   line-height: 30px;
   font-weight: normal;
   font-style: normal;
+
+  color: $gray-color;
 }
 
 .reviews__toggles {
@@ -154,7 +156,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews__container {
-    padding: 70px 0 143px $desktop-container-margin-left;
+    padding: 70px 0 135px $desktop-container-margin-left;
     width: 1050px;
     margin: 0 auto;
     box-sizing: border-box;

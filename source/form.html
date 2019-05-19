@@ -14,27 +14,28 @@
 <body>
 
 <header class="page-header no-js">
-  <a class="page-header__logo" href="/"  tabindex="3">
+  <a class="page-header__logo" href="/" tabindex="3">
     <picture>
-      <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+      <source media="(min-width: 1150px)" srcset="../img/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
       <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
     </picture>
   </a>
+  <button class="page-header__toggle"></button>
 
   <nav class="main-nav">
     <ul class="main-nav__list site-list">
 
       <li class="site-list__item site-list__item--catalog">
-        <a class="site-list__link" href="catalog.html"  tabindex="1">Каталог товаров</a>
+        <a class="site-list__link" href="catalog.html" tabindex="1">Каталог товаров</a>
       </li>
 
       <li class="site-list__item site-list__item--form">
-        <a class="site-list__link" href="form.html"  tabindex="2">Вязание на заказ</a>
+        <a class="site-list__link" href="form.html" tabindex="2">Вязание на заказ</a>
       </li>
 
       <li class="site-list__item site-list__item--search">
-        <a class="site-list__link" href="#"  tabindex="4">
+        <a class="site-list__link" href="#" tabindex="4">
           <svg class="site-list__icon site-list__icon--search" width="18" height="18">
             <use href="../img/sprite.svg#icon-search"></use>
           </svg>
@@ -42,23 +43,22 @@
       </li>
 
       <li class="site-list__item  site-list__item--cart">
-        <a class="site-list__link" href="shopping-cart.html"  tabindex="5">
+        <a class="site-list__link" href="shopping-cart.html" tabindex="5">
           <svg class="site-list__icon site-list__icon--cart" width="18" height="18">
             <use href="../img/sprite.svg#icon-cart"></use>
           </svg>
           Корзина: пока пуста</a>
       </li>
       <li class="site-list__item site-list__item--new">
-        <a class="site-list__link" href="catalog.html"  tabindex="6">Новые поступления</a>
+        <a class="site-list__link" href="catalog.html" tabindex="6">Новые поступления</a>
       </li>
 
       <li class="site-list__item site-list__item--sale">
-        <a class="site-list__link" href="catalog.html"  tabindex="7">Распродажа</a>
+        <a class="site-list__link" href="catalog.html" tabindex="7">Распродажа</a>
       </li>
     </ul>
   </nav>
   <span class="page-header__delivery">Бесплатная доставка по России</span>
-
 </header>
 
 <main class="page-main">
@@ -82,11 +82,11 @@
           <span class="form__fieldset-title">Тип</span>
           <ul class="form__fieldset-controls">
             <li class="form__control radio">
-              <input class="radio__input" type="radio" id="interior" name="product-type" value="interior" checked>
+              <input class="radio__input visually-hidden" type="radio" id="interior" name="product-type" value="interior" checked>
               <label class="form__label radio__label" for="interior">Аксессуар для интерьера</label>
             </li>
             <li class="form__control radio">
-              <input class="radio__input" type="radio" id="kids-toy" name="product-type" value="kids-toy">
+              <input class="radio__input visually-hidden" type="radio" id="kids-toy" name="product-type" value="kids-toy">
               <label class="form__label radio__label" for="kids-toy">Детская игрушка</label>
             </li>
           </ul>
@@ -98,27 +98,27 @@
           <span class="form__fieldset-title">Цвет</span>
           <ul class="form__fieldset-controls">
             <li class="form__control checkbox">
-              <input class="checkbox__input" type="checkbox" id="white-color" value="white" checked>
+              <input class="checkbox__input visually-hidden" type="checkbox" id="white-color" value="white" checked>
               <label class="form__label checkbox__label" for="white-color">Белый</label>
             </li>
             <li class="form__control checkbox">
-              <input class="checkbox__input" type="checkbox" id="gray-color" value="gray" checked>
+              <input class="checkbox__input visually-hidden" type="checkbox" id="gray-color" value="gray" checked>
               <label class="form__label checkbox__label" for="gray-color">Серый</label>
             </li>
             <li class="form__control checkbox">
-              <input class="checkbox__input" type="checkbox" id="tiffany-color" value="tiffany">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="tiffany-color" value="tiffany">
               <label class="form__label checkbox__label" for="tiffany-color">«Тиффани»</label>
             </li>
             <li class="form__control checkbox">
-              <input class="checkbox__input" type="checkbox" id="black-color" value="black">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="black-color" value="black">
               <label class="form__label checkbox__label" for="black-color">Черный</label>
             </li>
             <li class="form__control checkbox">
-              <input class="checkbox__input" type="checkbox" id="pink-color" value="pink">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="pink-color" value="pink">
               <label class="form__label checkbox__label" for="pink-color">Розовый</label>
             </li>
             <li class="form__control checkbox">
-              <input class="checkbox__input" type="checkbox" id="orange-color" value="orange">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="orange-color" value="orange">
               <label class="form__label checkbox__label" for="orange-color">Оранжевый</label>
             </li>
           </ul>
@@ -198,41 +198,44 @@
 </main>
 
 <footer class="page-footer">
-  <a class="page-footer__logo" href="index.html" aria-label="Магазин «Мишка»">
-    <svg class="page-footer__logo-img icon" width="102" height="34">
-      <use href="../img/sprite.svg#logo-footer"></use>
-    </svg>
-  </a>
-  <ul class="page-footer__social social__list">
-    <li class="social__item">
-      <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Instagram" title="Мы в Instagram">
-        <svg class="social__link-svg social__link-svg--instagram icon" width="22" height="21" role="img" focusable="false">
-          <use href="../img/sprite.svg#icon-insta"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Facebook" title="Мы в Facebook">
-        <svg class="social__link-svg social__link-svg--facebook icon" width="15" height="28" role="img" focusable="false">
-          <use href="../img/sprite.svg#icon-fb"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--twitter" href="https://www.twittero.com/htmlacademy" aria-label="Мы в Twitter" title="Мы в Facebook">
-        <svg class="social__link-svg social__link-svg--twitter icon" width="24" height="20" role="img" focusable="false">
-          <use href="../img/sprite.svg#icon-twitter"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-  <a class="copyright__link page-footer__copyright" href="http://htmlacademy.ru" aria-label="HTML Academy" title="HTML Academy">
-    <b class="copyright__text">Разработано</b>
-    <svg class="copyright__text-svg copyright__text-svg--academy icon" width="27" height="34" role="img" focusable="false">
-      <use href="../img/sprite.svg#logo-htmlacademy"></use>
-    </svg>
-  </a>
+  <div class="page-footer__wrapper">
+    <a class="page-footer__logo" href="index.html" aria-label="Магазин «Мишка»">
+      <svg class="page-footer__logo-img icon" width="102" height="34">
+        <use href="../img/sprite.svg#logo-footer"></use>
+      </svg>
+    </a>
+    <ul class="page-footer__social social__list">
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Instagram" title="Мы в Instagram">
+          <svg class="social__link-svg social__link-svg--instagram icon" width="22" height="21" role="img" focusable="false">
+            <use href="../img/sprite.svg#icon-insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Facebook" title="Мы в Facebook">
+          <svg class="social__link-svg social__link-svg--facebook icon" width="15" height="28" role="img" focusable="false">
+            <use href="../img/sprite.svg#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://www.twittero.com/htmlacademy" aria-label="Мы в Twitter" title="Мы в Facebook">
+          <svg class="social__link-svg social__link-svg--twitter icon" width="24" height="20" role="img" focusable="false">
+            <use href="../img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <a class="copyright__link page-footer__copyright" href="http://htmlacademy.ru" aria-label="HTML Academy" title="HTML Academy">
+      <b class="copyright__text">Разработано</b>
+      <svg class="copyright__text-svg copyright__text-svg--academy icon" width="27" height="34" role="img" focusable="false">
+        <use href="../img/sprite.svg#logo-htmlacademy"></use>
+      </svg>
+    </a>
+  </div>
 </footer>
+
 <script src="js/script.js"></script>
 
 </body>

@@ -51,8 +51,7 @@
 }
 
 .size__input {
-  height: 0;
-  width: 0;
+  appearance: none;
 }
 
 .size__input:checked + .size__label::before {

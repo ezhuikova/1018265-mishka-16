@@ -93,6 +93,7 @@
   .production {
     flex-direction: column;
     margin-bottom: 63px;
+    margin-top: 6px;
   }
 
   .production__description-wrapper {
@@ -109,8 +110,7 @@
   .production__title {
     @include catalogTabletTitle();
 
-    margin-top: 40px;
-    margin-bottom: 34px;
+    margin: 35px 0;
 
     padding-left: 107px;
 
@@ -122,7 +122,7 @@
   .production__description {
     min-height: 46px;
     width: 100%;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
 
     font-size: 15px;
     line-height: 30px;
@@ -136,47 +136,49 @@
   }
 
   .production__order-button {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production {
-    flex-wrap: wrap;
-    height: 455px;
+    flex-direction: row;
+    min-height: 455px;
     margin-bottom: 105px;
   }
 
   .production__title {
-    padding-top: 98px;
-    padding-left: $catalog-production-description-padding-left;
+    position: absolute;
+    top: 0;
+    left: 761px;
+    padding-top: 93px;
+    padding-left: 0;
     margin-top: 0;
     width: 20%;
 
     &::before {
-      left: $catalog-production-description-padding-left;
+      left: 0;
       top: 40%;
     }
   }
 
   .production__video-wrapper {
-    width: 685px;
+    flex-basis: 685px;
+    min-height: 454px;
   }
 
   .production__description-wrapper {
     @include catalogShadowBlock($hoverY: 0, $activeY: 0);
 
-    width: calc(100% - 685px);
-    margin-top: -180px;
-    padding-top: 180px;
+    margin-top: 0;
+    padding-top: 176px;
     padding-left: $catalog-production-description-padding-left;
-    padding-right: 57px;
+    padding-right: 46px;
     flex-grow: 1;
-    flex-basis: auto;
+    flex-basis: 0;
   }
 
   .production__order-button {
-    margin-top: auto;
-    margin-bottom: 27px;
+    margin: auto 4px 30px;
   }
 }

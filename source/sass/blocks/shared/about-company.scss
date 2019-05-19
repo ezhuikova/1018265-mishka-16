@@ -40,36 +40,39 @@
 
 .about-company__svg {
   width: 55px;
+  overflow: hidden;
 
   fill: $seafoam-blue;
+}
 
-  &--flower {
+.about-company__item {
+  &--flower .about-company__svg {
     height: 37px;
   }
 
-  &--money {
+  &--money .about-company__svg {
     width: 47px;
     height: 30px;
   }
 
-  &--heart {
+  &--heart .about-company__svg {
     width: 50px;
     height: 27px;
     padding-top: 7px;
   }
 
-  &--ball {
+  &--ball .about-company__svg {
     width: 43px;
     height: 34px;
     padding-top: 5px;
   }
 
-  &--rocket {
+  &--rocket .about-company__svg {
     height: 34px;
     width: 48px;
   }
 
-  &--gift {
+  &--gift .about-company__svg {
     height: 33px;
     width: 42px;
     padding-top: 4px;
@@ -82,7 +85,7 @@
   }
 
   .about-company__header {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   .about-company__description {
@@ -90,23 +93,41 @@
   }
 
   .about-company__item {
-    padding-bottom: 60px;
-    width: 50%;
+    margin-bottom: 29px;
+    flex-basis: 50%;
+
+    &--ball {
+      order: 2;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--gift {
+      order: 6;
+    }
   }
 
   .about-company__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    max-height: 500px;
-    min-height: 100px; //фикс для IE
     margin-bottom: -24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-company {
-    padding-top: 78px;
+    padding-top: 54px;
+    padding-bottom: 77px;
   }
 
   .about-company__title {
@@ -116,10 +137,11 @@
   .about-company__list {
     align-content: flex-start;
     margin-bottom: -38px;
+    justify-content: flex-start;
   }
 
   .about-company__item {
-    width: 40%;
+    flex-basis: 40%;
   }
 
   .about-company__description {

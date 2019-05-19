@@ -87,8 +87,9 @@
 
 .categories__svg {
   color: $blue-green;
-  font-size: 62px;
-
+  overflow: hidden;
+  width: 62px;
+  height: 62px;
   opacity: 0.5;
 }
 
@@ -141,14 +142,12 @@
   .categories__list {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 6.75%;
+    right: 6.75%;
 
     display: flex;
-    flex-basis: 100%;
     flex-direction: row;
-    width: 86.5%;
-
-    transform: translateX(-50%);
+    width: auto;
   }
 
   .categories__item {
@@ -186,6 +185,7 @@
   }
 
   .categories__list {
-    width: 91%;
+    left: 4.5%;
+    right: 4.5%;
   }
 }

@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.reviews__container {
+  padding-top: 25px;
+}
+
 .reviews__title {
   @include title();
   margin-bottom: 22px;
@@ -93,7 +97,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 77px 50px 100px 50px;
+    padding: 77px 50px 90px;
 
     background: white url("../img/review@1x.jpg") no-repeat;
     background-size: 350px auto;

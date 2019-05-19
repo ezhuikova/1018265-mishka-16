@@ -22,6 +22,7 @@
 .text-control__input {
   min-height: 49px;
   max-width: 100%;
+  flex-grow: 1;
 
   border: 0;
   border-bottom: 2px solid black;
@@ -112,7 +113,6 @@
   }
 
   .text-control__input {
-    flex-grow: 1;
     margin-left: 25px;
 
     text-indent: 18px;
@@ -125,5 +125,15 @@
     &--textarea {
       text-indent: 0;
     }
+  }
+
+  .text-control__icon {
+    right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-control__icon {
+    right: 6px;
   }
 }

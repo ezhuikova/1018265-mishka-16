@@ -91,6 +91,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding: 47px 0;
+  }
   .catalog__item {
     display: flex;
     flex-direction: row;
@@ -138,8 +141,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding-left: 0;
-    padding-bottom: 0;
+    padding: 70px 0 0;
   }
 
   .catalog__list {

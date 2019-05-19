@@ -10,8 +10,6 @@ const rename = require("gulp-rename");
 const del = require("del");
 
 const sass = require("gulp-sass");
-const posthtml = require("gulp-posthtml");
-const include = require('posthtml-include');
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
@@ -20,7 +18,6 @@ const server = require("browser-sync").create();
 
 gulp.task("html", function () {
   return  gulp.src("source/**/*.html")
-    .pipe(posthtml([include()]))
     .pipe(gulp.dest("build"))
     .pipe(server.stream());
 });

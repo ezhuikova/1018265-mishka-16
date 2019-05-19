@@ -28,24 +28,7 @@
   &:last-child {
     padding-bottom: 0;
   }
-}
 
-.about-company__description {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
-  text-align: left;
-  color: #000000;
-}
-
-.about-company__svg {
-  width: 55px;
-  overflow: hidden;
-
-  fill: $seafoam-blue;
-}
-
-.about-company__item {
   &--flower .about-company__svg {
     height: 37px;
   }
@@ -77,6 +60,21 @@
     width: 42px;
     padding-top: 4px;
   }
+}
+
+.about-company__description {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.about-company__svg {
+  width: 55px;
+  overflow: hidden;
+
+  fill: $seafoam-blue;
 }
 
 @media (min-width: $tablet-width) {
